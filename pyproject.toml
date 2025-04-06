@@ -1,0 +1,27 @@
+[project]
+name = "nude-catalog"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Homoludens",email = "artem.ivlev@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "tensorflow>=2.15.0,<3.0.0",
+    "tqdm>=4.67.1,<5.0.0",
+    "nudenet>=3.4.2",
+    "mediapipe>=0.10.21",
+    "opencv-python>=4.11.0",
+    "Pillow>=10.4.0",
+    "opennsfw2>=0.14.0",
+    "open_clip_torch>=2.31.0",
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
+    "imagehash>=4.3.1"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
