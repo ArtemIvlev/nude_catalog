@@ -27,4 +27,4 @@ venv/
 Thumbs.db
 
 # Игнорируем NudeNet
-NudeNet/ 
+NudeNet/ *.log

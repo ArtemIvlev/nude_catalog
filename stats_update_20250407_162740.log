@@ -1,0 +1,1328 @@
+2025-04-07 16:27:40,950 - __main__ - INFO - Запуск process_telegram_photos.py...
+2025-04-07 16:27:41,093 - __main__ - INFO - process_telegram_photos.py успешно выполнен
+2025-04-07 16:27:41,093 - __main__ - INFO - Запуск compare_telegram_photos.py...
+2025-04-07 16:27:41,096 - stats.compare_telegram_photos - INFO - Подключение к базе данных...
+2025-04-07 16:27:41,136 - stats.compare_telegram_photos - INFO - 
+Статистика:
+2025-04-07 16:27:41,136 - stats.compare_telegram_photos - INFO - Всего фотографий в базе данных: 0
+2025-04-07 16:27:41,136 - stats.compare_telegram_photos - INFO - Всего фотографий в директории: 350
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO - Фотографий только в базе данных: 0
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO - Фотографий только в директории: 350
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO - 
+Фотографии, которых нет в базе данных:
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_10.jpg
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_100.jpg
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_101.jpg
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_102.jpg
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_103.jpg
+2025-04-07 16:27:41,137 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_104.jpg
+2025-04-07 16:27:41,138 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_105.jpg
+2025-04-07 16:27:41,138 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_106.jpg
+2025-04-07 16:27:41,138 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_107.jpg
+2025-04-07 16:27:41,138 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_108.jpg
+2025-04-07 16:27:41,138 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_109.jpg
+2025-04-07 16:27:41,138 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_11.jpg
+2025-04-07 16:27:41,138 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_110.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_111.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_112.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_113.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_114.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_115.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_116.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_117.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_118.jpg
+2025-04-07 16:27:41,139 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_119.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_12.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_120.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_121.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_122.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_123.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_124.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_125.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_126.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_127.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_128.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_129.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_13.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_130.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_131.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_132.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_133.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_134.jpg
+2025-04-07 16:27:41,140 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_135.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_136.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_137.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_138.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_139.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_14.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_140.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_141.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_142.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_143.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_144.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_145.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_146.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_147.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_148.jpg
+2025-04-07 16:27:41,141 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_149.jpg
+2025-04-07 16:27:41,142 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_15.jpg
+2025-04-07 16:27:41,142 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_150.jpg
+2025-04-07 16:27:41,142 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_151.jpg
+2025-04-07 16:27:41,142 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_152.jpg
+2025-04-07 16:27:41,142 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_153.jpg
+2025-04-07 16:27:41,142 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_156.jpg
+2025-04-07 16:27:41,143 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_157.jpg
+2025-04-07 16:27:41,143 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_158.jpg
+2025-04-07 16:27:41,143 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_159.jpg
+2025-04-07 16:27:41,143 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_16.jpg
+2025-04-07 16:27:41,143 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_160.jpg
+2025-04-07 16:27:41,143 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_161.jpg
+2025-04-07 16:27:41,143 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_162.jpg
+2025-04-07 16:27:41,143 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_163.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_164.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_165.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_166.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_167.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_168.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_169.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_17.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_170.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_171.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_172.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_173.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_174.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_175.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_176.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_177.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_178.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_179.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_18.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_180.jpg
+2025-04-07 16:27:41,144 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_181.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_183.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_186.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_187.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_188.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_19.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_190.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_191.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_192.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_193.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_194.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_195.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_196.jpg
+2025-04-07 16:27:41,145 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_197.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_198.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_199.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_2.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_20.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_200.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_201.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_202.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_203.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_204.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_205.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_206.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_207.jpg
+2025-04-07 16:27:41,146 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_208.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_209.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_21.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_210.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_211.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_212.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_213.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_214.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_215.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_217.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_218.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_22.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_220.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_221.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_222.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_223.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_224.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_225.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_226.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_227.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_229.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_23.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_230.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_231.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_232.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_233.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_234.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_235.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_236.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_238.jpg
+2025-04-07 16:27:41,147 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_239.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_24.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_240.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_241.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_242.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_243.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_244.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_245.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_246.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_247.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_249.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_25.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_250.jpg
+2025-04-07 16:27:41,148 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_251.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_252.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_253.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_254.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_258.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_259.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_26.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_260.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_261.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_262.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_265.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_266.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_268.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_269.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_27.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_270.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_271.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_272.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_273.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_275.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_276.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_277.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_278.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_279.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_28.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_280.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_281.jpg
+2025-04-07 16:27:41,149 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_282.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_283.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_284.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_285.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_286.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_287.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_288.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_289.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_29.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_290.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_291.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_292.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_293.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_294.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_295.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_297.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_298.jpg
+2025-04-07 16:27:41,150 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_299.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_30.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_300.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_301.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_302.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_303.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_304.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_305.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_306.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_307.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_308.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_309.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_31.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_310.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_311.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_312.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_313.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_314.jpg
+2025-04-07 16:27:41,151 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_315.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_316.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_317.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_318.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_32.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_320.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_321.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_322.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_323.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_324.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_325.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_326.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_327.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_328.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_329.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_33.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_330.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_331.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_333.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_334.jpg
+2025-04-07 16:27:41,152 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_335.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_336.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_337.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_338.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_339.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_34.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_340.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_344.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_345.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_346.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_347.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_348.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_349.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_35.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_350.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_351.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_352.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_353.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_354.jpg
+2025-04-07 16:27:41,153 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_355.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_356.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_357.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_358.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_359.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_36.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_360.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_361.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_362.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_363.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_364.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_365.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_366.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_367.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_368.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_369.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_37.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_370.jpg
+2025-04-07 16:27:41,154 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_372.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_373.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_374.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_375.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_376.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_377.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_379.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_38.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_380.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_381.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_382.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_383.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_384.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_385.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_387.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_39.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_40.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_41.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_42.jpg
+2025-04-07 16:27:41,155 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_43.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_44.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_45.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_46.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_47.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_48.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_49.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_50.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_51.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_52.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_53.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_54.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_55.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_56.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_57.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_58.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_59.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_60.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_61.jpg
+2025-04-07 16:27:41,156 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_62.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_63.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_64.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_65.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_66.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_67.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_68.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_69.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_70.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_71.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_72.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_73.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_74.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_75.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_76.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_77.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_78.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_80.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_81.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_82.jpg
+2025-04-07 16:27:41,157 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_83.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_84.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_85.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_86.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_88.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_89.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_9.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_90.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_91.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_92.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_93.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_94.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_95.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_96.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_98.jpg
+2025-04-07 16:27:41,158 - stats.compare_telegram_photos - INFO -   - ../telegram_bot/downloaded/msg_99.jpg
+2025-04-07 16:27:41,159 - __main__ - INFO - compare_telegram_photos.py успешно выполнен
+2025-04-07 16:27:41,159 - __main__ - INFO - Запуск compare_phash.py...
+2025-04-07 16:27:41,162 - stats.compare_phash - INFO - Подключение к базам данных...
+2025-04-07 16:27:41,163 - stats.compare_phash - INFO - Найдено 340 фотографий в телеграм канале
+2025-04-07 16:27:41,182 - stats.compare_phash - INFO - Найдено 13690 фотографий в основной базе данных
+2025-04-07 16:27:43,926 - stats.compare_phash - INFO - 
+Результаты сравнения:
+2025-04-07 16:27:43,927 - stats.compare_phash - INFO - Всего фотографий в телеграм канале: 340
+2025-04-07 16:27:43,927 - stats.compare_phash - INFO - Найдено совпадений: 340
+2025-04-07 16:27:43,927 - stats.compare_phash - INFO - Не найдено совпадений: 0
+2025-04-07 16:27:43,927 - stats.compare_phash - INFO - 
+Совпадения:
+2025-04-07 16:27:43,928 - stats.compare_phash - INFO -   - downloaded/msg_385.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC4017.jpg']
+2025-04-07 16:27:43,928 - stats.compare_phash - INFO -   - downloaded/msg_384.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC3435.jpg']
+2025-04-07 16:27:43,928 - stats.compare_phash - INFO -   - downloaded/msg_383.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Госпожа Татьяна/_DSC1919.jpg']
+2025-04-07 16:27:43,928 - stats.compare_phash - INFO -   - downloaded/msg_382.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ольга Ильюшина/all/_DSC5025.jpg']
+2025-04-07 16:27:43,928 - stats.compare_phash - INFO -   - downloaded/msg_381.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5723-2.jpg']
+2025-04-07 16:27:43,928 - stats.compare_phash - INFO -   - downloaded/msg_380.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8740.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_379.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/НЕБДСМ/_DSC8285-2.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_377.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/_DSC3667-2.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_376.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC3030.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_375.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/Утренняя)/_DSC6403.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_374.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ольга Ильюшина/all/_DSC5051.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_373.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Любовь(@withlove_makeup)/_DSC7298.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_372.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC4342-2.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_370.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария (@mar_mar_marusya)/_DSC5529-2.jpg']
+2025-04-07 16:27:43,929 - stats.compare_phash - INFO -   - downloaded/msg_369.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC4183.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_368.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/_DSC9869.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_367.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария Лето/Angel/Все_Маленький_размер/_DSC4986.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_366.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/_DSC9651.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_365.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC4065.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_364.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Стих/_DSC8597.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_363.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/Утренняя)/_DSC6468.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_362.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC2598.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_361.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/_DSC5434.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_360.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Первая/_DSC7845.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_359.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария Лето/Angel/Все_Маленький_размер/_DSC5026.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_358.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/НЕБДСМ/_DSC8454-2.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_357.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/НЕБДСМ/_DSC8456-2.jpg']
+2025-04-07 16:27:43,930 - stats.compare_phash - INFO -   - downloaded/msg_356.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC3589.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_355.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/Утренняя)/_DSC6298.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_354.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Анна Малиновская/Все_МаленькийРазмер/_DSC6233.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_353.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Первая/_DSC7816.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_352.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксения Лебедева (BRUSSNIKA)/_DSC0822-2.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_351.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Первая/_DSC7728.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_350.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC7010.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_349.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC8146.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_348.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC2021.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_347.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/Утренняя)/_DSC6628.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_346.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/_DSC9865-2-4.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_345.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Любовь(@withlove_makeup)/_DSC7640.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_344.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC3005.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_340.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/Утренняя)/_DSC6743.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_339.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3805-3.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_338.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3674.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_337.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3600.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_336.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3583.jpg']
+2025-04-07 16:27:43,931 - stats.compare_phash - INFO -   - downloaded/msg_335.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3562.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_334.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3561.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_333.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3565-2.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_331.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/_DSC7910.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_330.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария (@mbars777)/_DSC5193.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_329.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Гаянэ/_DSC0536.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_328.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC2584.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_327.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Татьяна (taty_2022)/Все_маленькийразмер/t-086.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_326.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/вакс/_DSC8229.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_325.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC6354.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_324.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/all_halfsize/_DSC3840.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_323.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/180624/_DSC5569-2.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_322.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC3395.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_321.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Анастасия (@savyrsoul)/_DSC5981.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_320.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария (@mbars777)/_DSC5256.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_318.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/Утренняя)/_DSC6408.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_317.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3743-3.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_316.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC1732.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_315.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC8919.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_314.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5656-3.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_313.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7950.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_312.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC1906.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_311.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC3275.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_310.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/all_halfsize/_DSC3477.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_309.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC3191.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC3191-2.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC3191-3.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_308.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Госпожа Татьяна/_DSC1808.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_307.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Анастасия (@savyrsoul)/_DSC6030.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_306.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC2853.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_305.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/_DSC7725.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_304.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7898-Enhanced-NR-2.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_303.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/Все_/_DSC7733.jpg']
+2025-04-07 16:27:43,932 - stats.compare_phash - INFO -   - downloaded/msg_302.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7657-3.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_301.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария (@mbars777)/_DSC5249.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_300.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC4089.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_299.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC2105.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_298.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/_DSC0841.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_297.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Evgeniya Cors/Игрушки_Каталог/игрушки-027.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_295.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC1921.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_294.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3593.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_293.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3595.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_292.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC3634.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_291.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8812.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_290.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Алина Титова (@ApelsiN04KA)/_DSC4648-2.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_289.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8514.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_288.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Диана и Оля 2/_DSC7741-Edit-2.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_287.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0236.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_286.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC9017.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_285.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария Лето/вчерном/add/_DSC7312-2.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_284.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC2758.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_283.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC2766.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_282.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Крис (@sskotobaza)/_DSC2731.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_281.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария Лето/Angel/Все_Маленький_размер/_DSC4711-2.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_280.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5893.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_279.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия Кацар/_DSC8753.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_278.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/ДР/_DSC7448.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_277.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC1968.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_276.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC2144.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_275.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/_DSC9846-2-2.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_273.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Госпожа Любовь (@Mistress_Love_Moscow)/_DSC5879.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_272.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Тёма/_DSC7051-Enhanced-NR.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_271.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/_DSC3631.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_270.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8319.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_269.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/_DSC3790.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_268.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7815-2.jpg']
+2025-04-07 16:27:43,933 - stats.compare_phash - INFO -   - downloaded/msg_266.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/_DSC7346.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_265.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Оля/allUnEdited/_DSC2579.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_262.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC1539-Enhanced-NR.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_261.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8639.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_260.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC9097.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_259.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия Кацар/_DSC9274.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_258.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катерина (@Greben_kat)/_DSC1646.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_254.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/_DSC0846-4.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_253.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/_DSC0145.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_252.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Evgeniya Cors/Куклы/_DSC9614.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_251.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия (@u_rule)/Second/_DSC8683.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_250.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/_DSC0263.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_249.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC8002.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_247.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane/_DSC6415.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_246.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Оля/allUnEdited/_DSC2586.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_245.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария (@mar_mar_marusya)/_DSC5685.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_244.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия Кацар/_DSC9040.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_243.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия Кацар/_DSC9026.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_242.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия Кацар/_DSC9035.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_241.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/secondOne/_DSC1850.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_240.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/edited/18+/_DSC1284.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_239.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя/edited/_DSC6257.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_238.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия (@u_rule)/Second/_DSC9160.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_236.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC3917.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_235.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Bell^2/_DSC9979.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_234.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ирина (@Irina_Zhigalskaya)/Неон/_DSC2482.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_233.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/secondOne/_DSC1955.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_232.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC4647.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_231.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия (@u_rule)/Second/_DSC8364.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_230.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия (@u_rule)/First/_DSC7722.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_229.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/DanMari/_DSC9032.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_227.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия (@u_rule)/Second/_DSC8370.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_226.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5914.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_225.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5908.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/За стеклом/_DSC5908.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_224.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/edited/_DSC1997.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_223.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/all_halfsize/_DSC3537.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_222.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/edited/_DSC1186-2.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_221.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Bell/_DSC5787.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_220.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/edited/_DSC0215-2-2.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_218.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/edited/_DSC0197.jpg']
+2025-04-07 16:27:43,934 - stats.compare_phash - INFO -   - downloaded/msg_217.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Аня/В ванной/_DSC5181-Enhanced-NR.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_215.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Любовь(@withlove_makeup)/_DSC6839.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_214.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC3932.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_213.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC4373.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_212.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия (@u_rule)/First/_DSC7430.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_211.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC8419-3.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_210.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC8537.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_209.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC4628.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_208.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC4115-2.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_206.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Айгуль/_DSC0326.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_205.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Айгуль/_DSC0369-2.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Айгуль/_DSC0369.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_204.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Галина/_DSC3330.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_203.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Evgeniya Cors/Клоун/_DSC0030.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_202.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0227-2.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_201.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0052-2.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_200.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Liya/_DSC1455.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_199.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7796.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_198.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7791.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_197.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7789.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_196.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC3698.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_195.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC3695-2.jpg']
+2025-04-07 16:27:43,935 - stats.compare_phash - INFO -   - downloaded/msg_194.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0693.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_193.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8356-Enhanced-NR.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_192.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Галина/_DSC3320-2.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_191.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/IMG_20241201_214447.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_190.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC3685.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_188.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8635-2.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_187.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/_DSC0609.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/_DSC0609.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_186.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Bell^2/_DSC0251.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_183.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Оля/_DSC2871-Edit.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_181.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC4723.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_180.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ольга Ильюшина/all/_DSC4982.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_179.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/ДР/_DSC7505.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_178.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0701-2.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_177.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7856-Enhanced-NR.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_176.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Татьяна (taty_2022)/t-066-2.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_175.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Тёма/_DSC6907-2.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Тёма/_DSC6907.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_174.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8597.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_173.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Тёма/_DSC6722-2.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_172.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC6191-2.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_171.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/_DSC3799-2.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_170.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Айгуль/_DSC0214.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_169.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/_DSC9499.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_168.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/180624/_DSC5834-3.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_167.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Галина/_DSC3315-4.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_166.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Аня/VaginaPic/Studio Session-029-2.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_165.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/!Автопортреты/_DSC3170.jpg']
+2025-04-07 16:27:43,936 - stats.compare_phash - INFO -   - downloaded/msg_164.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/!Автопортреты/_DSC3171.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_163.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ирина (@Irina_Zhigalskaya)/Неон/_DSC2474.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_162.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Bell^2/_DSC0111-3.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Bell^2/Choosen/_DSC0111-3.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_161.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Госпожа Татьяна/_DSC1760.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_160.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC9145-Enhanced-NR.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_159.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/edited/_DSC1408.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_158.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Госпожа Татьяна/_DSC1962.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_157.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Госпожа Татьяна/_DSC1950-3.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_156.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/_DSC9845-2.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_153.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/secondOne/_DSC1850.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_152.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC8033.jpg']
+2025-04-07 16:27:43,937 - stats.compare_phash - INFO -   - downloaded/msg_151.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC7929.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_150.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ирина (@Irina_Zhigalskaya)/Неон/_DSC2916.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_149.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ирина (@Irina_Zhigalskaya)/Неон/18/_DSC2681.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_148.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катя/_DSC8171 (1).jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_147.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/secondOne/_DSC1812.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_146.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ирина (@Irina_Zhigalskaya)/Неон/_DSC2554.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_145.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/edited/_DSC0389.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_144.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5815.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_143.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/edited/_DSC5393.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_142.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Диана и Оля 2/_DSC7834.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_141.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Госпожа Татьяна/_DSC2062.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_140.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8496.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_139.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Черная комната/_DSC3109.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Черная комната/_DSC3109-2.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_138.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Черная комната/_DSC3085.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_137.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Черная комната/_DSC3073-Enhanced-NR.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_136.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Черная комната/_DSC3067-3.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_134.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/_DSC7706.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_133.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8627.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_132.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катя/цвет/_DSC8083.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_131.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7757-4.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_130.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария/choosen/_DSC6992.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_129.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Мария/choosen/_DSC7001-Edit.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_128.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5739.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_127.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/edited/_DSC0494.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_126.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ира (@mebestbefo_re)/_DSC9077.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_125.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Диана и Оля/_DSC4978.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_124.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Айгуль/_DSC0434.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_123.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/all_halfsize/_DSC3862.jpg']
+2025-04-07 16:27:43,938 - stats.compare_phash - INFO -   - downloaded/msg_122.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Юлия (@u_rule)/First/_DSC7830.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_121.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Снежана/_DSC6130-Edit.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_120.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC8585.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_118.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8488.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_117.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC7110.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_116.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC7064.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_115.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC7061.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_114.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/_DSC5834.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_113.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8756.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_112.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/secondOne/_DSC1853.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_111.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/_DSC7717-Edit.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC7717-Edit.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/red/_DSC7717-Edit.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_110.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC7679.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_109.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC7301.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_108.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC7247.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_107.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/180624/_DSC5938.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_106.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/180624/_DSC5900-2.jpg']
+2025-04-07 16:27:43,939 - stats.compare_phash - INFO -   - downloaded/msg_105.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/_DSC2690-2.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_104.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/_DSC2702-2.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_103.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/!Автопортреты/dickpick/_DSC8854-3.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_102.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8557.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_101.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/_DSC9843.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_99.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Елена (@vikkiverra)/_DSC8673.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_98.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/_DSC9888-2.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_96.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/edited/_DSC0325-3.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_95.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0385.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_94.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/180624/_DSC5896.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_93.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC9063.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_92.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8889-2.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_91.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC8148.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/вакс/_DSC8148.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_90.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC8174.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/вакс/_DSC8174.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_89.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC8262.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/вакс/_DSC8262.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_88.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC8168.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/вакс/_DSC8168.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_86.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5645.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_85.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/!Автопортреты/_DSC0961.jpg']
+2025-04-07 16:27:43,940 - stats.compare_phash - INFO -   - downloaded/msg_84.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC9129.jpg']
+2025-04-07 16:27:43,941 - stats.compare_phash - INFO -   - downloaded/msg_83.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Bell^2/_DSC0399.jpg']
+2025-04-07 16:27:43,941 - stats.compare_phash - INFO -   - downloaded/msg_82.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/_DSC7258-Edit.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/red/_DSC7258-Edit.jpg']
+2025-04-07 16:27:43,941 - stats.compare_phash - INFO -   - downloaded/msg_81.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7776.jpg']
+2025-04-07 16:27:43,941 - stats.compare_phash - INFO -   - downloaded/msg_80.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/_DSC8099.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/вакс/_DSC8099.jpg']
+2025-04-07 16:27:43,941 - stats.compare_phash - INFO -   - downloaded/msg_78.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/_DSC9427-2.jpg']
+2025-04-07 16:27:43,941 - stats.compare_phash - INFO -   - downloaded/msg_77.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Катя/_DSC8090.jpg']
+2025-04-07 16:27:43,941 - stats.compare_phash - INFO -   - downloaded/msg_76.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0683.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_75.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC8774.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_74.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC8431.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_73.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/edited/_DSC1385-2.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_72.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8813.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_71.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/edited/_DSC1236.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_70.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Оля/_DSC2878.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_69.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Черная комната/_DSC3111.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_68.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7877-Enhanced-NR.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_67.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Диана и Оля 2/_DSC7855.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_66.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксения Лебедева (BRUSSNIKA)/BRUSSNIKA-271-2.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксения Лебедева (BRUSSNIKA)/Все_маленькийразмер/BRUSSNIKA-271.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_65.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC9141.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_64.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксения Лебедева (BRUSSNIKA)/BRUSSNIKA-166.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_63.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксения Лебедева (BRUSSNIKA)/BRUSSNIKA-150.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_62.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/_DSC0402-3.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/_DSC0402-2.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка2/edited/_DSC0402-2.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_61.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка/_DSC2652-2.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_60.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка/_DSC2630-2.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка/color2/_DSC2630.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_59.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка/_DSC2670-2.jpg']
+2025-04-07 16:27:43,942 - stats.compare_phash - INFO -   - downloaded/msg_58.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8732.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_57.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Татьяна (taty_2022)/t-046.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Татьяна (taty_2022)/Все_маленькийразмер/t-046.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_56.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/_DSC3591.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_55.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC8816-Edit.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_54.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC8071.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_53.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC8001-Edit.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_52.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC7983-Edit.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_51.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Айгуль/_DSC0460.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_50.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Таня/_DSC3930.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_49.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Olga_Mukova/Olga_Mukova-401.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_48.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Дмитрий Силаев/_DSC7938-2.jpg']
+2025-04-07 16:27:43,943 - stats.compare_phash - INFO -   - downloaded/msg_47.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Лена и Женя/ТретийЗаход/_DSC7948.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_46.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC6108.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_45.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Домашка/_DSC2690.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_44.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Айгуль/_DSC0435.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_40.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/!Автопортреты/_DSC9340.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_39.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/!Автопортреты/_DSC9357.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_38.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Тина/_DSC3724-2.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_37.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/+Тёма/_DSC6619.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_35.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Дмитрий Силаев/_DSC8066.jpg', '/mnt/smb/OneDrive/Pictures/!Фотосессии/Дмитрий Силаев/Соло/_DSC8066.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_34.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Di - Лиса/_DSC0655.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_33.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Di - Лиса/_DSC0890-2.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_32.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/Шибари/BW/_DSC8230.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_31.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Диана и Оля 2/_DSC7904.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_29.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/За стеклом/_DSC5903.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_28.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксюша/НезапланированныйДень/ДР/_DSC7459.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_27.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Bell/_DSC5787.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_26.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Evgeniya Cors/НГ2/_DSC6836-2.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_25.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Evgeniya Cors/Куклы/_DSC9657.jpg']
+2025-04-07 16:27:43,944 - stats.compare_phash - INFO -   - downloaded/msg_24.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Снежана/_DSC6130-Edit.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_23.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Ольга Ильюшина/all/_DSC5011.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_22.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC5614.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_21.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0658.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_20.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Lana S/_DSC0676.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_19.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Анна Малиновская/_DSC6211.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_18.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC8978-3.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_17.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC9042.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_16.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Jane2/_DSC9068.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_15.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC9137.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_14.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8891.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_13.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8581.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_12.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8559.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_11.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8527.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_10.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8508.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_9.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Женя и Таня/_DSC8489.jpg']
+2025-04-07 16:27:43,945 - stats.compare_phash - INFO -   - downloaded/msg_387.jpg -> ['/mnt/smb/OneDrive/Pictures/!Фотосессии/Anastasy_9/Утренняя)/_DSC6598.jpg']
+2025-04-07 16:27:43,948 - __main__ - INFO - compare_phash.py успешно выполнен
+2025-04-07 16:27:43,948 - __main__ - INFO - Запуск sync_published_status.py...
+2025-04-07 16:27:43,949 - stats.sync_published_status - INFO - Подключение к базам данных...
+2025-04-07 16:27:43,949 - stats.sync_published_status - INFO - Получение списка опубликованных фотографий из базы Telegram...
+2025-04-07 16:27:43,950 - stats.sync_published_status - INFO - Найдено 340 фотографий в базе Telegram
+2025-04-07 16:27:43,950 - stats.sync_published_status - INFO - Получение списка фотографий из основной базы...
+2025-04-07 16:27:43,957 - stats.sync_published_status - INFO - Найдено 13690 фотографий в основной базе
+2025-04-07 16:27:47,872 - stats.sync_published_status - INFO - Обновлено 0 записей
+2025-04-07 16:27:47,873 - stats.sync_published_status - INFO - Синхронизация статусов завершена успешно
+2025-04-07 16:27:47,874 - __main__ - INFO - sync_published_status.py успешно выполнен
+2025-04-07 16:27:47,874 - __main__ - INFO - Запуск list_no_matches.py...
+2025-04-07 16:27:47,880 - stats.list_no_matches - INFO - Подключение к базам данных...
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO - 
+Найдено 111 фотографий без совпадений:
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -   - downloaded/msg_382.jpg
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -     Message ID: 382
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -     pHash: 4c5c0ddc1c0c0c00
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -     Дата публикации: 2025-04-02 05:51:01+00:00
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -   - downloaded/msg_380.jpg
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -     Message ID: 380
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -     pHash: 9fdfe3063cf000ff
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-31 14:16:53+00:00
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -   - downloaded/msg_376.jpg
+2025-04-07 16:27:47,891 - stats.list_no_matches - INFO -     Message ID: 376
+2025-04-07 16:27:47,892 - stats.list_no_matches - INFO -     pHash: 3e3e663e18800000
+2025-04-07 16:27:47,892 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-28 05:18:01+00:00
+2025-04-07 16:27:47,892 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,892 - stats.list_no_matches - INFO -   - downloaded/msg_374.jpg
+2025-04-07 16:27:47,892 - stats.list_no_matches - INFO -     Message ID: 374
+2025-04-07 16:27:47,892 - stats.list_no_matches - INFO -     pHash: 0010587c6c6f2720
+2025-04-07 16:27:47,893 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-26 05:34:49+00:00
+2025-04-07 16:27:47,893 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,893 - stats.list_no_matches - INFO -   - downloaded/msg_370.jpg
+2025-04-07 16:27:47,893 - stats.list_no_matches - INFO -     Message ID: 370
+2025-04-07 16:27:47,893 - stats.list_no_matches - INFO -     pHash: 1c181c1c3e3c3c3e
+2025-04-07 16:27:47,893 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-22 05:15:05+00:00
+2025-04-07 16:27:47,893 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,894 - stats.list_no_matches - INFO -   - downloaded/msg_369.jpg
+2025-04-07 16:27:47,894 - stats.list_no_matches - INFO -     Message ID: 369
+2025-04-07 16:27:47,894 - stats.list_no_matches - INFO -     pHash: 0241e4c7c7c6c764
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-21 05:59:01+00:00
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO -   - downloaded/msg_367.jpg
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO -     Message ID: 367
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO -     pHash: 00703e3f3f3f1e00
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-19 05:48:01+00:00
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO -   - downloaded/msg_361.jpg
+2025-04-07 16:27:47,895 - stats.list_no_matches - INFO -     Message ID: 361
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO -     pHash: ffff243c3c241800
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-14 13:28:49+00:00
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO -   - downloaded/msg_359.jpg
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO -     Message ID: 359
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO -     pHash: 823e3c3913020000
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-13 05:52:01+00:00
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO -   - downloaded/msg_356.jpg
+2025-04-07 16:27:47,896 - stats.list_no_matches - INFO -     Message ID: 356
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     pHash: 3c183c18183c5858
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-11 10:19:06+00:00
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -   - downloaded/msg_354.jpg
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Message ID: 354
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     pHash: 3331f8f8f880c0c0
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-10 05:15:11+00:00
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -   - downloaded/msg_351.jpg
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Message ID: 351
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     pHash: 000c0c0c7b730300
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-08 07:20:08+00:00
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -   - downloaded/msg_346.jpg
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Message ID: 346
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     pHash: 000000f03c0c0000
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-05 05:23:01+00:00
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -   - downloaded/msg_345.jpg
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Message ID: 345
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     pHash: 001cdcc7cf9fbfff
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-04 05:12:01+00:00
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -   - downloaded/msg_337.jpg
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Message ID: 337
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     pHash: ff7f3c0607303400
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-01 05:23:01+00:00
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -   - downloaded/msg_335.jpg
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Message ID: 335
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     pHash: f27c2efb98181818
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Дата публикации: 2025-03-01 05:23:01+00:00
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -   - downloaded/msg_329.jpg
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Message ID: 329
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     pHash: e0f0f0e02e3f077f
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-26 05:49:01+00:00
+2025-04-07 16:27:47,897 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -   - downloaded/msg_328.jpg
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Message ID: 328
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     pHash: 18180c0c3e360e5c
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-25 05:26:01+00:00
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -   - downloaded/msg_327.jpg
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Message ID: 327
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     pHash: 001e3e3f2f7e7c38
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-24 05:17:01+00:00
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -   - downloaded/msg_326.jpg
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Message ID: 326
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     pHash: 1b1104383b070700
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-23 05:55:10+00:00
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -   - downloaded/msg_324.jpg
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Message ID: 324
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     pHash: ff0f07efe7030200
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-21 05:52:01+00:00
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -   - downloaded/msg_316.jpg
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Message ID: 316
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     pHash: e8c0f07c7c1c080c
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-15 05:06:01+00:00
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -   - downloaded/msg_311.jpg
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Message ID: 311
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     pHash: 888c0cf0e4c0d0e8
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-12 05:45:36+00:00
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -   - downloaded/msg_310.jpg
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Message ID: 310
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     pHash: 3cffff3f3f3e3600
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-11 05:47:01+00:00
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -   - downloaded/msg_304.jpg
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     Message ID: 304
+2025-04-07 16:27:47,898 - stats.list_no_matches - INFO -     pHash: c0850313ffefe7c7
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-06 05:01:01+00:00
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -   - downloaded/msg_303.jpg
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     Message ID: 303
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     pHash: f3c3c0c1e0f0e1e1
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-05 05:29:01+00:00
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -   - downloaded/msg_298.jpg
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     Message ID: 298
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     pHash: 080c7c783478c080
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     Дата публикации: 2025-02-01 05:22:01+00:00
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -   - downloaded/msg_297.jpg
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     Message ID: 297
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     pHash: e7e7e7e7c383e3c7
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-31 06:20:11+00:00
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -   - downloaded/msg_290.jpg
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     Message ID: 290
+2025-04-07 16:27:47,899 - stats.list_no_matches - INFO -     pHash: c1e1e0f0f0e4fc7f
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-29 19:22:44+00:00
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -   - downloaded/msg_288.jpg
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Message ID: 288
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     pHash: 009ffedfffc91347
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-28 05:22:01+00:00
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -   - downloaded/msg_286.jpg
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Message ID: 286
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     pHash: 04787878780c0000
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-26 05:01:01+00:00
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -   - downloaded/msg_285.jpg
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Message ID: 285
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     pHash: 0000003c3c7e7c38
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-25 05:48:01+00:00
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -   - downloaded/msg_284.jpg
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Message ID: 284
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     pHash: 1e1f0e1e3a120000
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-24 05:03:01+00:00
+2025-04-07 16:27:47,900 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_281.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 281
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: 716c3c783c000048
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-23 15:36:52+00:00
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_280.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 280
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: 0707773727272721
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-23 05:46:01+00:00
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_278.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 278
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: 60f0ededced69400
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-21 05:45:06+00:00
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_265.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 265
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: 01c1c38b0f070307
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-15 05:42:01+00:00
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_254.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 254
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: 70fc5e0600000000
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-10 05:20:04+00:00
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_253.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 253
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: 083c1c0e101f3f3f
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-09 05:36:01+00:00
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_252.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 252
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: 04040e083c3c7c6f
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-08 05:36:01+00:00
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_251.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 251
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: 02227b19191f1f1f
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-07 05:31:11+00:00
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -   - downloaded/msg_250.jpg
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     Message ID: 250
+2025-04-07 16:27:47,901 - stats.list_no_matches - INFO -     pHash: c0c0f7fffffffe7f
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-06 20:16:29+00:00
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -   - downloaded/msg_246.jpg
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Message ID: 246
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     pHash: 1818f2f3f0f8fe1f
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-04 05:26:01+00:00
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -   - downloaded/msg_245.jpg
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Message ID: 245
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     pHash: d2f21b19117179fb
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2025-01-03 05:45:08+00:00
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -   - downloaded/msg_239.jpg
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Message ID: 239
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     pHash: 7e7e3c3c3c202824
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-31 05:05:09+00:00
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -   - downloaded/msg_235.jpg
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Message ID: 235
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     pHash: 0c04677f3c606063
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-29 05:53:12+00:00
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -   - downloaded/msg_230.jpg
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Message ID: 230
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     pHash: 000767dbc7c3301f
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-25 05:17:01+00:00
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -   - downloaded/msg_229.jpg
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Message ID: 229
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     pHash: e7e79983818185ff
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-24 12:26:40+00:00
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -   - downloaded/msg_223.jpg
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Message ID: 223
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     pHash: f8fefef3f3003f02
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-22 18:04:21+00:00
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -   - downloaded/msg_221.jpg
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Message ID: 221
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     pHash: 06c0e0f8f0fefcfe
+2025-04-07 16:27:47,902 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-21 12:37:33+00:00
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -   - downloaded/msg_220.jpg
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Message ID: 220
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     pHash: 7e3ef0e0c0e0fef0
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-21 12:37:33+00:00
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -   - downloaded/msg_217.jpg
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Message ID: 217
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     pHash: 0630787cf0f0c007
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-20 05:31:01+00:00
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -   - downloaded/msg_215.jpg
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Message ID: 215
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     pHash: e6e79ee0e7e7f9e9
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-19 05:27:22+00:00
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -   - downloaded/msg_209.jpg
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Message ID: 209
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     pHash: fd67610000060302
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-14 05:10:01+00:00
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -   - downloaded/msg_204.jpg
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Message ID: 204
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     pHash: fffff904e6f2f0c0
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-11 05:07:01+00:00
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -   - downloaded/msg_203.jpg
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Message ID: 203
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     pHash: 002424e6cbdf9e3e
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-10 05:03:01+00:00
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -   - downloaded/msg_202.jpg
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Message ID: 202
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     pHash: 7f7f7fe5e4e088f8
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-09 05:24:01+00:00
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -   - downloaded/msg_201.jpg
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Message ID: 201
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     pHash: 0f0f078f9f9f1f8f
+2025-04-07 16:27:47,903 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-08 05:20:03+00:00
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -   - downloaded/msg_198.jpg
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Message ID: 198
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     pHash: 040606667f373130
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-07 08:13:28+00:00
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -   - downloaded/msg_195.jpg
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Message ID: 195
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     pHash: 04ecfbb6de062060
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-06 05:25:09+00:00
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -   - downloaded/msg_194.jpg
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Message ID: 194
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     pHash: 0c2c386c7c386060
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-05 05:52:01+00:00
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -   - downloaded/msg_191.jpg
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Message ID: 191
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     pHash: 0c003e3e78701c7c
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Дата публикации: 2024-12-02 05:49:01+00:00
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -   - downloaded/msg_183.jpg
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Message ID: 183
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     pHash: 4060f0f8b080003f
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-27 05:27:01+00:00
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -   - downloaded/msg_180.jpg
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Message ID: 180
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     pHash: 61796f061838c4c7
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-25 05:36:01+00:00
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -   - downloaded/msg_179.jpg
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Message ID: 179
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     pHash: cf1f3e34302042c0
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-25 05:36:01+00:00
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -   - downloaded/msg_177.jpg
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     Message ID: 177
+2025-04-07 16:27:47,904 - stats.list_no_matches - INFO -     pHash: f8f8f8fa323c1c08
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-23 05:25:06+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_170.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 170
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: 1010f4f8f8f9f110
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-16 05:35:05+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_169.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 169
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: 02071f1f8780080e
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-15 05:18:01+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_167.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 167
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: ffef7ce10190d078
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-13 05:09:01+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_166.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 166
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: d8f8f8fcd0400000
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-12 05:31:01+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_163.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 163
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: 9f9f6f61b31f0501
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-10 05:40:06+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_159.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 159
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: e4c6870d0bb5b0c9
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-06 05:33:01+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_157.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 157
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: fffda400008125bd
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-05 05:32:30+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_152.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 152
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: f00e0713160e3c7c
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-11-02 05:13:01+00:00
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -   - downloaded/msg_149.jpg
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Message ID: 149
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     pHash: 0707060600040202
+2025-04-07 16:27:47,905 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-31 05:03:01+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_148.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 148
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: e0f0f0c8fcfce0e0
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-30 05:23:01+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_132.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 132
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: ff3f00009c3cfcfe
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-17 05:34:01+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_130.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 130
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: 000000f8faf78f8f
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-15 05:25:02+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_129.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 129
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: fc7e7fff30000000
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-15 05:25:02+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_128.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 128
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: 3efef4e4e0c18130
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-14 05:15:03+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_126.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 126
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: 00001f1f0f1f0f06
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-13 07:40:25+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_123.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 123
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: 87ffffefffb00000
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-10 05:21:01+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_122.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 122
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: 0e1860714f6f3000
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-09 05:35:05+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_121.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 121
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     pHash: 203f1e00dcd83070
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-09 05:35:05+00:00
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -   - downloaded/msg_117.jpg
+2025-04-07 16:27:47,906 - stats.list_no_matches - INFO -     Message ID: 117
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -     pHash: 0f3f2f1f3f010400
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-06 05:24:01+00:00
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -   - downloaded/msg_114.jpg
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -     Message ID: 114
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -     pHash: 00040e187effc0c0
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-05 05:25:07+00:00
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -   - downloaded/msg_109.jpg
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -     Message ID: 109
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -     pHash: 0c0c0c7c3d05064b
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-03 05:29:01+00:00
+2025-04-07 16:27:47,907 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -   - downloaded/msg_103.jpg
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Message ID: 103
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     pHash: 001002061c1c1800
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Дата публикации: 2024-10-01 05:17:01+00:00
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -   - downloaded/msg_95.jpg
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Message ID: 95
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     pHash: ff3f0fc3c003397c
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-24 05:29:01+00:00
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -   - downloaded/msg_92.jpg
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Message ID: 92
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     pHash: f0f0f0e0e0646cec
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-21 07:50:19+00:00
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -   - downloaded/msg_85.jpg
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Message ID: 85
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     pHash: 0606c18300430f9f
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-18 15:23:34+00:00
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -   - downloaded/msg_84.jpg
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Message ID: 84
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     pHash: 30303f3c58980701
+2025-04-07 16:27:47,908 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-18 15:23:34+00:00
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -   - downloaded/msg_83.jpg
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Message ID: 83
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     pHash: 0e6c1c7373331202
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-18 15:23:34+00:00
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -   - downloaded/msg_81.jpg
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Message ID: 81
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     pHash: 1f3f3e0f03000000
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-17 06:40:16+00:00
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -   - downloaded/msg_68.jpg
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Message ID: 68
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     pHash: 100e3e1e1e360607
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-06 05:32:30+00:00
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -   - downloaded/msg_65.jpg
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Message ID: 65
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     pHash: fc8045458bb1e0f1
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-04 13:49:55+00:00
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -   - downloaded/msg_59.jpg
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Message ID: 59
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     pHash: 1f1f18303e6c6c00
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-02 06:54:27+00:00
+2025-04-07 16:27:47,909 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -   - downloaded/msg_58.jpg
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Message ID: 58
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     pHash: 60f93f7c0cc7030b
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Дата публикации: 2024-09-01 05:42:01+00:00
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -   - downloaded/msg_55.jpg
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Message ID: 55
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     pHash: e4e487070f0f1cf8
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-29 09:28:56+00:00
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -   - downloaded/msg_50.jpg
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Message ID: 50
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     pHash: 047fffe33f7f7f0e
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-24 13:57:12+00:00
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -   - downloaded/msg_48.jpg
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Message ID: 48
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     pHash: 033fdfceccb80078
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-24 13:57:12+00:00
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -   - downloaded/msg_38.jpg
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     Message ID: 38
+2025-04-07 16:27:47,910 - stats.list_no_matches - INFO -     pHash: 436634387824e600
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-10 08:04:04+00:00
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -   - downloaded/msg_33.jpg
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Message ID: 33
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     pHash: 2070f4ffbfce6c20
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-09 07:53:33+00:00
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -   - downloaded/msg_29.jpg
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Message ID: 29
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     pHash: 1c07072727033323
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-07 06:43:53+00:00
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -   - downloaded/msg_28.jpg
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Message ID: 28
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     pHash: 00189f2f8fc00000
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-06 07:21:10+00:00
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -   - downloaded/msg_27.jpg
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Message ID: 27
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     pHash: 0000c1f1fff8fffe
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-06 07:21:10+00:00
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,911 - stats.list_no_matches - INFO -   - downloaded/msg_26.jpg
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO -     Message ID: 26
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO -     pHash: 00c0e4e0f1f6f878
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-05 08:08:07+00:00
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO -   - downloaded/msg_25.jpg
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO -     Message ID: 25
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO -     pHash: 01191c160e02367e
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-05 08:08:07+00:00
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,912 - stats.list_no_matches - INFO -   - downloaded/msg_24.jpg
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     Message ID: 24
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     pHash: 203f1e00dcd83070
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-05 08:08:07+00:00
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -   - downloaded/msg_23.jpg
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     Message ID: 23
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     pHash: 040c3ce67e1f0408
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-05 08:08:07+00:00
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -   - downloaded/msg_19.jpg
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     Message ID: 19
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     pHash: 1038ffef66202000
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO -     Дата публикации: 2024-08-03 13:51:13+00:00
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO - 
+2025-04-07 16:27:47,913 - stats.list_no_matches - INFO - 
+Результаты сохранены в файл no_matches.json
+2025-04-07 16:27:47,915 - __main__ - INFO - list_no_matches.py успешно выполнен
+2025-04-07 16:27:47,915 - __main__ - INFO - Запуск update_channel_stats.py...
+2025-04-07 16:27:47,963 - telethon.crypto.aes - INFO - cryptg detected, it will be used for encryption
+2025-04-07 16:27:48,214 - __main__ - INFO - update_channel_stats.py успешно выполнен
+2025-04-07 16:27:48,214 - __main__ - INFO - Запуск update_subscribers.py...
+2025-04-07 16:27:48,215 - __main__ - ERROR - Не найдена основная функция в update_subscribers.py
+2025-04-07 16:27:48,215 - __main__ - INFO - Запуск import_stats.py...
+2025-04-07 16:27:48,255 - __main__ - INFO - import_stats.py успешно выполнен
+2025-04-07 16:27:48,255 - __main__ - INFO - Запуск analyze_stats.py...
+2025-04-07 16:27:48,272 - __main__ - INFO - analyze_stats.py успешно выполнен
+2025-04-07 16:27:48,273 - __main__ - INFO - Запуск analyze_normalized.py...
+2025-04-07 16:27:48,285 - __main__ - INFO - analyze_normalized.py успешно выполнен
+2025-04-07 16:27:48,286 - __main__ - INFO - Запуск check_dates.py...
+2025-04-07 16:27:48,287 - __main__ - ERROR - Не найдена основная функция в check_dates.py
+2025-04-07 16:27:48,287 - __main__ - INFO - Запуск check_status.py...
+2025-04-07 16:27:48,289 - stats.check_status - INFO - Подключение к базе данных...
+2025-04-07 16:27:48,291 - stats.check_status - INFO - Всего фотографий в базе: 13690
+2025-04-07 16:27:48,293 - stats.check_status - INFO - Фотографий с нормализованной статистикой: 250
+2025-04-07 16:27:48,298 - stats.check_status - INFO - 
+Распределение статусов:
+2025-04-07 16:27:48,298 - stats.check_status - INFO - approved: 234
+2025-04-07 16:27:48,298 - stats.check_status - INFO - published: 359
+2025-04-07 16:27:48,298 - stats.check_status - INFO - rejected: 13097
+2025-04-07 16:27:48,301 - stats.check_status - INFO - 
+Фотографий со статистикой без статуса: 0
+2025-04-07 16:27:48,301 - __main__ - INFO - check_status.py успешно выполнен
+2025-04-07 16:27:48,301 - __main__ - INFO - Запуск find_worst_photos.py...
+2025-04-07 16:27:48,302 - __main__ - ERROR - Не найдена основная функция в find_worst_photos.py
+2025-04-07 16:27:48,302 - __main__ - INFO - 
+Итоговый отчет:
+2025-04-07 16:27:48,302 - __main__ - INFO - process_telegram_photos.py: Успешно
+2025-04-07 16:27:48,302 - __main__ - INFO - compare_telegram_photos.py: Успешно
+2025-04-07 16:27:48,302 - __main__ - INFO - compare_phash.py: Успешно
+2025-04-07 16:27:48,302 - __main__ - INFO - sync_published_status.py: Успешно
+2025-04-07 16:27:48,302 - __main__ - INFO - list_no_matches.py: Успешно
+2025-04-07 16:27:48,303 - __main__ - INFO - update_channel_stats.py: Успешно
+2025-04-07 16:27:48,303 - __main__ - INFO - update_subscribers.py: Ошибка
+2025-04-07 16:27:48,303 - __main__ - INFO - import_stats.py: Успешно
+2025-04-07 16:27:48,303 - __main__ - INFO - analyze_stats.py: Успешно
+2025-04-07 16:27:48,303 - __main__ - INFO - analyze_normalized.py: Успешно
+2025-04-07 16:27:48,303 - __main__ - INFO - check_dates.py: Ошибка
+2025-04-07 16:27:48,303 - __main__ - INFO - check_status.py: Успешно
+2025-04-07 16:27:48,303 - __main__ - INFO - find_worst_photos.py: Ошибка
