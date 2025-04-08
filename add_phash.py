@@ -15,8 +15,8 @@ def compute_phash(image_path):
             # Преобразуем в RGB, если изображение в другом формате
             if img.mode != 'RGB':
                 img = img.convert('RGB')
-            # Вычисляем phash
-            return str(imagehash.phash(img))
+            # Вычисляем average_hash
+            return str(imagehash.average_hash(img))
     except Exception as e:
         print(f"Ошибка при вычислении pHash для {image_path}: {e}")
         print(traceback.format_exc())

@@ -20,68 +20,39 @@ def import_stats():
     telegram_conn = sqlite3.connect('../telegram_bot/published_photos.sqlite')
     telegram_cur = telegram_conn.cursor()
     
-    # Получаем статистику из Telegram бота с pHash и путем файла
-    telegram_cur.execute("""
-        SELECT 
-            p.message_id,
-            p.views,
-            p.forwards,
-            GROUP_CONCAT(r.reaction || ':' || r.count) as reactions,
-            h.phash,
-            s.subscribers_count,
-            p.file_path
-        FROM published_photos p
-        LEFT JOIN reactions r ON p.message_id = r.message_id
-        LEFT JOIN photo_hashes h ON p.message_id = h.message_id
-        LEFT JOIN subscribers_stats s ON p.message_id = s.message_id
-        GROUP BY p.message_id
-    """)
-    
-    stats = {}
-    for row in telegram_cur.fetchall():
-        message_id, views, forwards, reactions, phash, subscribers, file_path = row
-        if phash:
-            # Нормализуем просмотры и пересылки относительно количества подписчиков
-            normalized_views = (views or 0) / (subscribers or 1)
-            normalized_forwards = (forwards or 0) / (subscribers or 1)
-            
-            stats[phash] = {
-                'views': views or 0,
-                'forwards': forwards or 0,
-                'reactions': reactions or '',
-                'subscribers': subscribers or 0,
-                'normalized_views': normalized_views,
-                'normalized_forwards': normalized_forwards,
-                'file_path': file_path
-            }
-    
     # Получаем все опубликованные фотографии из нашей базы
     catalog_cur.execute(f"""
-        SELECT id, phash, path, status 
+        SELECT id, message_id 
         FROM {TABLE_NAME} 
-        WHERE status = 'published'
+        WHERE status = 'published' AND message_id IS NOT NULL
     """)
     
     updated = 0
     not_found = 0
     not_found_details = []
     
-    for id, phash, path, status in catalog_cur.fetchall():
-        found = False
+    for id, message_id in catalog_cur.fetchall():
+        # Получаем статистику из Telegram бота по message_id
+        telegram_cur.execute("""
+            SELECT 
+                p.views,
+                p.forwards,
+                GROUP_CONCAT(r.reaction || ':' || r.count) as reactions,
+                s.subscribers_count
+            FROM published_photos p
+            LEFT JOIN reactions r ON p.message_id = r.message_id
+            LEFT JOIN subscribers_stats s ON p.message_id = s.message_id
+            WHERE p.message_id = ?
+            GROUP BY p.message_id
+        """, (message_id,))
         
-        # Пробуем найти по pHash
-        if phash and phash in stats:
-            stat = stats[phash]
-            found = True
-        else:
-            # Если не нашли по pHash, пробуем найти по пути файла
-            path_parts = Path(path).parts
-            for phash, stat in stats.items():
-                if stat['file_path'] and Path(stat['file_path']).name == Path(path).name:
-                    found = True
-                    break
-        
-        if found:
+        row = telegram_cur.fetchone()
+        if row:
+            views, forwards, reactions, subscribers = row
+            # Нормализуем просмотры и пересылки относительно количества подписчиков
+            normalized_views = (views or 0) / (subscribers or 1)
+            normalized_forwards = (forwards or 0) / (subscribers or 1)
+            
             catalog_cur.execute(f"""
                 UPDATE {TABLE_NAME}
                 SET views = ?,
@@ -92,35 +63,36 @@ def import_stats():
                     normalized_forwards = ?
                 WHERE id = ?
             """, (
-                stat['views'], 
-                stat['forwards'], 
-                stat['reactions'], 
-                stat['subscribers'],
-                stat['normalized_views'],
-                stat['normalized_forwards'],
+                views or 0,
+                forwards or 0,
+                reactions or '',
+                subscribers or 0,
+                normalized_views,
+                normalized_forwards,
                 id
             ))
             updated += 1
         else:
             not_found += 1
-            not_found_details.append({
-                'id': id,
-                'path': path,
-                'phash': phash
-            })
+            not_found_details.append(f"ID: {id}, Message ID: {message_id}")
     
+    # Сохраняем изменения
     catalog_conn.commit()
-    catalog_conn.close()
-    telegram_conn.close()
     
-    # Выводим статистику
-    logger.info(f"Обновлено {updated} записей")
-    logger.info(f"Не найдено статистики для {not_found} фотографий")
+    # Выводим результаты
+    logger.info(f"Обновлено записей: {updated}")
+    logger.info(f"Не найдено записей: {not_found}")
     
     if not_found_details:
-        logger.info("\nДетали по необработанным фотографиям:")
-        for photo in not_found_details:
-            logger.info(f"ID: {photo['id']}, Путь: {photo['path']}, pHash: {photo['phash']}")
+        logger.info("Не найденные записи:")
+        for detail in not_found_details[:10]:  # Показываем только первые 10
+            logger.info(f"  - {detail}")
+        if len(not_found_details) > 10:
+            logger.info(f"  ... и еще {len(not_found_details) - 10} записей")
+    
+    # Закрываем соединения
+    catalog_conn.close()
+    telegram_conn.close()
 
 if __name__ == "__main__":
     import_stats() 

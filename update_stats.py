@@ -60,7 +60,7 @@ async def update_all_stats():
         # 1. Синхронизация фотографий с Telegram
         'process_telegram_photos.py',  # Обработка фотографий из Telegram
         'compare_telegram_photos.py',  # Сравнение фотографий в базе и директории
-        'compare_phash.py',           # Сравнение pHash фотографий
+        'compare_phash_new.py',           # Сравнение pHash фотографий
         'list_no_matches.py',         # Список фотографий без совпадений
         
         # 2. Обновление данных из Telegram

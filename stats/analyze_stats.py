@@ -1,4 +1,8 @@
 import sqlite3
+import sys
+import os
+
+
 from config import *
 
 def analyze_stats():
