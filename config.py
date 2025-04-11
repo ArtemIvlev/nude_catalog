@@ -1,7 +1,8 @@
 # Пути к файлам и директориям
 PHOTO_DIR = r"/mnt/smb/OneDrive/Pictures/!Фотосессии/"
-DB_FILE = "database.db"
+DB_FILE = "DB/database.db"
 REVIEW_DIR = "review"
+TELEGRAM_DB = "DB/telegram.db"  # Путь к базе данных Telegram
 
 # Параметры базы данных
 TABLE_NAME = "photos_ok"

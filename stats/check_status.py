@@ -1,5 +1,6 @@
 import sqlite3
 import logging
+from config import *
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -10,7 +11,7 @@ def check_statuses():
     try:
         # Подключаемся к базе
         logger.info("Подключение к базе данных...")
-        conn = sqlite3.connect('database.db')
+        conn = sqlite3.connect(DB_FILE)
         cur = conn.cursor()
         
         # Проверяем общее количество фотографий

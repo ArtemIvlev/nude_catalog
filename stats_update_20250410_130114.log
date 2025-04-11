@@ -1,0 +1,70 @@
+2025-04-10 13:01:14,681 - __main__ - INFO - Запуск process_telegram_photos.py...
+2025-04-10 13:01:14,841 - __main__ - ERROR - Ошибка при выполнении process_telegram_photos.py: no such table: published_photos
+2025-04-10 13:01:14,841 - __main__ - INFO - Запуск compare_phash_new.py...
+2025-04-10 13:01:14,898 - stats.compare_phash_new - INFO - Подключение к базам данных...
+2025-04-10 13:01:14,898 - stats.compare_phash_new - INFO - Поле processed уже существует
+2025-04-10 13:01:14,899 - stats.compare_phash_new - ERROR - Ошибка при сравнении pHash: no such table: published_photos
+2025-04-10 13:01:14,899 - __main__ - ERROR - Ошибка при выполнении compare_phash_new.py: no such table: published_photos
+2025-04-10 13:01:14,899 - __main__ - INFO - Запуск update_channel_stats.py...
+2025-04-10 13:01:14,906 - telethon.crypto.aes - INFO - cryptg detected, it will be used for encryption
+2025-04-10 13:01:15,042 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2025-04-10 13:01:15,135 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2025-04-10 13:01:16,687 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2025-04-10 13:01:16,688 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2025-04-10 13:01:16,692 - __main__ - INFO - update_channel_stats.py успешно выполнен
+2025-04-10 13:01:16,692 - __main__ - INFO - Запуск update_subscribers.py...
+2025-04-10 13:01:16,694 - __main__ - ERROR - Ошибка при выполнении update_subscribers.py: no such table: published_photos
+2025-04-10 13:01:16,694 - __main__ - INFO - Запуск import_stats.py...
+2025-04-10 13:01:16,701 - __main__ - ERROR - Ошибка при выполнении import_stats.py: no such table: published_photos
+2025-04-10 13:01:16,702 - __main__ - INFO - Запуск analyze_stats.py...
+2025-04-10 13:01:16,718 - __main__ - INFO - analyze_stats.py успешно выполнен
+2025-04-10 13:01:16,718 - __main__ - INFO - Запуск analyze_normalized.py...
+2025-04-10 13:01:16,727 - __main__ - INFO - analyze_normalized.py успешно выполнен
+2025-04-10 13:01:16,727 - __main__ - INFO - Запуск check_dates.py...
+2025-04-10 13:01:16,728 - stats.check_dates - INFO - Подключение к базе данных...
+2025-04-10 13:01:16,731 - stats.check_dates - INFO - 
+Статистика по датам публикации:
+2025-04-10 13:01:16,731 - stats.check_dates - INFO - Дата | Количество фото | Средние просмотры | Средние пересылки
+2025-04-10 13:01:16,731 - stats.check_dates - INFO - --------------------------------------------------------------------------------
+2025-04-10 13:01:16,731 - stats.check_dates - INFO - 2025-04-06 |   246 | 1.7859 | 0.0053
+2025-04-10 13:01:16,732 - __main__ - INFO - check_dates.py успешно выполнен
+2025-04-10 13:01:16,732 - __main__ - INFO - Запуск check_status.py...
+2025-04-10 13:01:16,733 - stats.check_status - INFO - Подключение к базе данных...
+2025-04-10 13:01:16,753 - stats.check_status - INFO - Всего фотографий в базе: 9072
+2025-04-10 13:01:16,756 - stats.check_status - INFO - Фотографий с нормализованной статистикой: 334
+2025-04-10 13:01:16,760 - stats.check_status - INFO - 
+Распределение статусов:
+2025-04-10 13:01:16,760 - stats.check_status - INFO - approved: 191
+2025-04-10 13:01:16,760 - stats.check_status - INFO - published: 521
+2025-04-10 13:01:16,760 - stats.check_status - INFO - rejected: 8279
+2025-04-10 13:01:16,760 - stats.check_status - INFO - review: 81
+2025-04-10 13:01:16,762 - stats.check_status - INFO - 
+Фотографий со статистикой без статуса: 0
+2025-04-10 13:01:16,762 - __main__ - INFO - check_status.py успешно выполнен
+2025-04-10 13:01:16,762 - __main__ - INFO - Запуск find_worst_photos.py...
+2025-04-10 13:01:16,765 - stats.find_worst_photos - INFO - Подключение к базе данных...
+2025-04-10 13:01:16,768 - stats.find_worst_photos - INFO - 
+Топ-5 фотографий с самыми низкими ненулевыми показателями за все время:
+2025-04-10 13:01:16,768 - stats.find_worst_photos - INFO - Путь | Просмотры | Пересылки | Статус | Дата публикации | Общий скор
+2025-04-10 13:01:16,768 - stats.find_worst_photos - INFO - ----------------------------------------------------------------------------------------------------
+2025-04-10 13:01:16,768 - stats.find_worst_photos - INFO - _DSC3745.jpg | 0.1774 | 0.0006 | published | Нет | 0.1781
+2025-04-10 13:01:16,768 - stats.find_worst_photos - INFO - _DSC7761.jpg | 0.3588 | 0.0032 | published | Нет | 0.3620
+2025-04-10 13:01:16,768 - stats.find_worst_photos - INFO - _DSC6598.jpg | 0.5110 | 0.0019 | published | Нет | 0.5130
+2025-04-10 13:01:16,768 - stats.find_worst_photos - INFO - _DSC1919.jpg | 0.6940 | 0.0026 | rejected | Нет | 0.6966
+2025-04-10 13:01:16,769 - stats.find_worst_photos - INFO - _DSC3435.jpg | 0.7340 | 0.0020 | published | 2025-04-06 | 0.7360
+2025-04-10 13:01:16,771 - stats.find_worst_photos - INFO - 
+Общая статистика за все время (для ненулевых значений):
+2025-04-10 13:01:16,771 - stats.find_worst_photos - INFO - Всего фотографий с ненулевой статистикой: 267
+2025-04-10 13:01:16,771 - __main__ - INFO - find_worst_photos.py успешно выполнен
+2025-04-10 13:01:16,771 - __main__ - INFO - 
+Итоговый отчет:
+2025-04-10 13:01:16,771 - __main__ - INFO - process_telegram_photos.py: Ошибка
+2025-04-10 13:01:16,771 - __main__ - INFO - compare_phash_new.py: Ошибка
+2025-04-10 13:01:16,771 - __main__ - INFO - update_channel_stats.py: Успешно
+2025-04-10 13:01:16,771 - __main__ - INFO - update_subscribers.py: Ошибка
+2025-04-10 13:01:16,771 - __main__ - INFO - import_stats.py: Ошибка
+2025-04-10 13:01:16,771 - __main__ - INFO - analyze_stats.py: Успешно
+2025-04-10 13:01:16,772 - __main__ - INFO - analyze_normalized.py: Успешно
+2025-04-10 13:01:16,772 - __main__ - INFO - check_dates.py: Успешно
+2025-04-10 13:01:16,772 - __main__ - INFO - check_status.py: Успешно
+2025-04-10 13:01:16,772 - __main__ - INFO - find_worst_photos.py: Успешно

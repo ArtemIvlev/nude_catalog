@@ -1,6 +1,7 @@
 import sqlite3
 import logging
 from datetime import datetime
+from config import DB_FILE
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -11,7 +12,7 @@ def check_publication_dates():
     try:
         # Подключаемся к базе
         logger.info("Подключение к базе данных...")
-        conn = sqlite3.connect('database.db')
+        conn = sqlite3.connect(DB_FILE)
         cur = conn.cursor()
         
         # Проверяем распределение дат публикации

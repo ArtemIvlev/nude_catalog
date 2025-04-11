@@ -4,9 +4,8 @@ import logging
 import sys
 import os
 
-# Добавляем корневую директорию в путь для импорта
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config import *
+import config
+from config import DB_FILE, TELEGRAM_DB, TABLE_NAME
 
 # Настраиваем логирование
 logging.basicConfig(level=logging.INFO)
@@ -17,7 +16,7 @@ def import_stats():
     catalog_conn = sqlite3.connect(DB_FILE)
     catalog_cur = catalog_conn.cursor()
     
-    telegram_conn = sqlite3.connect('../telegram_bot/published_photos.sqlite')
+    telegram_conn = sqlite3.connect(TELEGRAM_DB)
     telegram_cur = telegram_conn.cursor()
     
     # Получаем все опубликованные фотографии из нашей базы

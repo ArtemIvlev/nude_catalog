@@ -5,10 +5,17 @@ import asyncio
 from datetime import datetime
 import sys
 import os
+import logging
+from pathlib import Path
+from config import DB_FILE, TELEGRAM_DB, TABLE_NAME, STATUS_PUBLISHED
 
 # Добавляем путь к конфигурации Telegram бота
 sys.path.append('../telegram_bot')
 from configs import settings
+
+# Настройка логирования
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 async def get_channel_stats():
     # Подключаемся к Telegram используя существующую сессию
@@ -38,7 +45,7 @@ async def get_channel_stats():
             channel=channel,
             dark=True
         ))
-        current_subscribers = stats.followers
+        current_subscribers = stats.followers.current
         print(f"Текущее количество подписчиков: {current_subscribers}")
         
         # Получаем все сообщения

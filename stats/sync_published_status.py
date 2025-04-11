@@ -2,6 +2,7 @@ import sqlite3
 import logging
 from pathlib import Path
 from tqdm import tqdm
+from config import DB_FILE, TELEGRAM_DB, TABLE_NAME, STATUS_PUBLISHED
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -38,10 +39,10 @@ def sync_published_status():
     try:
         # Подключаемся к базам данных
         logger.info("Подключение к базам данных...")
-        main_conn = sqlite3.connect('database.db')
+        main_conn = sqlite3.connect(DB_FILE)
         main_cur = main_conn.cursor()
         
-        telegram_conn = sqlite3.connect('../telegram_bot/published_photos.sqlite')
+        telegram_conn = sqlite3.connect(TELEGRAM_DB)
         telegram_cur = telegram_conn.cursor()
         
         # Получаем список опубликованных фотографий из базы Telegram

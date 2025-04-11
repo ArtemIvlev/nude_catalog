@@ -1,679 +1,679 @@
 [
   {
+    "message_id": 389,
+    "file_path": "msg_389.jpg",
+    "phash": "3f1f0f07070f1238",
+    "publication_date": "2025-04-09 05:26:50+00:00"
+  },
+  {
     "message_id": 388,
-    "file_path": "downloaded/msg_388.jpg",
+    "file_path": "msg_388.jpg",
     "phash": "0000001c3c3c0000",
     "publication_date": "2025-04-08 05:27:01+00:00"
   },
   {
     "message_id": 383,
-    "file_path": "downloaded/msg_383.jpg",
+    "file_path": "msg_383.jpg",
     "phash": "7f0f003193df1f9f",
     "publication_date": "2025-04-03 05:59:01+00:00"
   },
   {
     "message_id": 382,
-    "file_path": "downloaded/msg_382.jpg",
+    "file_path": "msg_382.jpg",
     "phash": "4c5c0ddc1c0c0c00",
     "publication_date": "2025-04-02 05:51:01+00:00"
   },
   {
     "message_id": 380,
-    "file_path": "downloaded/msg_380.jpg",
+    "file_path": "msg_380.jpg",
     "phash": "9fdfe3063cf000ff",
     "publication_date": "2025-03-31 14:16:53+00:00"
   },
   {
     "message_id": 376,
-    "file_path": "downloaded/msg_376.jpg",
+    "file_path": "msg_376.jpg",
     "phash": "3e3e663e18800000",
     "publication_date": "2025-03-28 05:18:01+00:00"
   },
   {
     "message_id": 374,
-    "file_path": "downloaded/msg_374.jpg",
+    "file_path": "msg_374.jpg",
     "phash": "0010587c6c6f2720",
     "publication_date": "2025-03-26 05:34:49+00:00"
   },
   {
     "message_id": 370,
-    "file_path": "downloaded/msg_370.jpg",
+    "file_path": "msg_370.jpg",
     "phash": "1c181c1c3e3c3c3e",
     "publication_date": "2025-03-22 05:15:05+00:00"
   },
   {
     "message_id": 369,
-    "file_path": "downloaded/msg_369.jpg",
+    "file_path": "msg_369.jpg",
     "phash": "0241e4c7c7c6c764",
     "publication_date": "2025-03-21 05:59:01+00:00"
   },
   {
     "message_id": 367,
-    "file_path": "downloaded/msg_367.jpg",
+    "file_path": "msg_367.jpg",
     "phash": "00703e3f3f3f1e00",
     "publication_date": "2025-03-19 05:48:01+00:00"
   },
   {
     "message_id": 361,
-    "file_path": "downloaded/msg_361.jpg",
+    "file_path": "msg_361.jpg",
     "phash": "ffff243c3c241800",
     "publication_date": "2025-03-14 13:28:49+00:00"
   },
   {
     "message_id": 359,
-    "file_path": "downloaded/msg_359.jpg",
+    "file_path": "msg_359.jpg",
     "phash": "823e3c3913020000",
     "publication_date": "2025-03-13 05:52:01+00:00"
   },
   {
     "message_id": 356,
-    "file_path": "downloaded/msg_356.jpg",
+    "file_path": "msg_356.jpg",
     "phash": "3c183c18183c5858",
     "publication_date": "2025-03-11 10:19:06+00:00"
   },
   {
     "message_id": 354,
-    "file_path": "downloaded/msg_354.jpg",
+    "file_path": "msg_354.jpg",
     "phash": "3331f8f8f880c0c0",
     "publication_date": "2025-03-10 05:15:11+00:00"
   },
   {
     "message_id": 351,
-    "file_path": "downloaded/msg_351.jpg",
+    "file_path": "msg_351.jpg",
     "phash": "000c0c0c7b730300",
     "publication_date": "2025-03-08 07:20:08+00:00"
   },
   {
     "message_id": 346,
-    "file_path": "downloaded/msg_346.jpg",
+    "file_path": "msg_346.jpg",
     "phash": "000000f03c0c0000",
     "publication_date": "2025-03-05 05:23:01+00:00"
   },
   {
     "message_id": 345,
-    "file_path": "downloaded/msg_345.jpg",
+    "file_path": "msg_345.jpg",
     "phash": "001cdcc7cf9fbfff",
     "publication_date": "2025-03-04 05:12:01+00:00"
   },
   {
-    "message_id": 337,
-    "file_path": "downloaded/msg_337.jpg",
-    "phash": "ff7f3c0607303400",
-    "publication_date": "2025-03-01 05:23:01+00:00"
-  },
-  {
     "message_id": 335,
-    "file_path": "downloaded/msg_335.jpg",
+    "file_path": "msg_335.jpg",
     "phash": "f27c2efb98181818",
     "publication_date": "2025-03-01 05:23:01+00:00"
   },
   {
+    "message_id": 337,
+    "file_path": "msg_337.jpg",
+    "phash": "ff7f3c0607303400",
+    "publication_date": "2025-03-01 05:23:01+00:00"
+  },
+  {
     "message_id": 329,
-    "file_path": "downloaded/msg_329.jpg",
+    "file_path": "msg_329.jpg",
     "phash": "e0f0f0e02e3f077f",
     "publication_date": "2025-02-26 05:49:01+00:00"
   },
   {
     "message_id": 328,
-    "file_path": "downloaded/msg_328.jpg",
+    "file_path": "msg_328.jpg",
     "phash": "18180c0c3e360e5c",
     "publication_date": "2025-02-25 05:26:01+00:00"
   },
   {
     "message_id": 327,
-    "file_path": "downloaded/msg_327.jpg",
+    "file_path": "msg_327.jpg",
     "phash": "001e3e3f2f7e7c38",
     "publication_date": "2025-02-24 05:17:01+00:00"
   },
   {
     "message_id": 326,
-    "file_path": "downloaded/msg_326.jpg",
+    "file_path": "msg_326.jpg",
     "phash": "1b1104383b070700",
     "publication_date": "2025-02-23 05:55:10+00:00"
   },
   {
     "message_id": 324,
-    "file_path": "downloaded/msg_324.jpg",
+    "file_path": "msg_324.jpg",
     "phash": "ff0f07efe7030200",
     "publication_date": "2025-02-21 05:52:01+00:00"
   },
   {
     "message_id": 316,
-    "file_path": "downloaded/msg_316.jpg",
+    "file_path": "msg_316.jpg",
     "phash": "e8c0f07c7c1c080c",
     "publication_date": "2025-02-15 05:06:01+00:00"
   },
   {
     "message_id": 311,
-    "file_path": "downloaded/msg_311.jpg",
+    "file_path": "msg_311.jpg",
     "phash": "888c0cf0e4c0d0e8",
     "publication_date": "2025-02-12 05:45:36+00:00"
   },
   {
     "message_id": 310,
-    "file_path": "downloaded/msg_310.jpg",
+    "file_path": "msg_310.jpg",
     "phash": "3cffff3f3f3e3600",
     "publication_date": "2025-02-11 05:47:01+00:00"
   },
   {
     "message_id": 304,
-    "file_path": "downloaded/msg_304.jpg",
+    "file_path": "msg_304.jpg",
     "phash": "c0850313ffefe7c7",
     "publication_date": "2025-02-06 05:01:01+00:00"
   },
   {
     "message_id": 303,
-    "file_path": "downloaded/msg_303.jpg",
+    "file_path": "msg_303.jpg",
     "phash": "f3c3c0c1e0f0e1e1",
     "publication_date": "2025-02-05 05:29:01+00:00"
   },
   {
     "message_id": 298,
-    "file_path": "downloaded/msg_298.jpg",
+    "file_path": "msg_298.jpg",
     "phash": "080c7c783478c080",
     "publication_date": "2025-02-01 05:22:01+00:00"
   },
   {
     "message_id": 297,
-    "file_path": "downloaded/msg_297.jpg",
+    "file_path": "msg_297.jpg",
     "phash": "e7e7e7e7c383e3c7",
     "publication_date": "2025-01-31 06:20:11+00:00"
   },
   {
     "message_id": 290,
-    "file_path": "downloaded/msg_290.jpg",
+    "file_path": "msg_290.jpg",
     "phash": "c1e1e0f0f0e4fc7f",
     "publication_date": "2025-01-29 19:22:44+00:00"
   },
   {
     "message_id": 288,
-    "file_path": "downloaded/msg_288.jpg",
+    "file_path": "msg_288.jpg",
     "phash": "009ffedfffc91347",
     "publication_date": "2025-01-28 05:22:01+00:00"
   },
   {
     "message_id": 286,
-    "file_path": "downloaded/msg_286.jpg",
+    "file_path": "msg_286.jpg",
     "phash": "04787878780c0000",
     "publication_date": "2025-01-26 05:01:01+00:00"
   },
   {
     "message_id": 285,
-    "file_path": "downloaded/msg_285.jpg",
+    "file_path": "msg_285.jpg",
     "phash": "0000003c3c7e7c38",
     "publication_date": "2025-01-25 05:48:01+00:00"
   },
   {
     "message_id": 284,
-    "file_path": "downloaded/msg_284.jpg",
+    "file_path": "msg_284.jpg",
     "phash": "1e1f0e1e3a120000",
     "publication_date": "2025-01-24 05:03:01+00:00"
   },
   {
     "message_id": 281,
-    "file_path": "downloaded/msg_281.jpg",
+    "file_path": "msg_281.jpg",
     "phash": "716c3c783c000048",
     "publication_date": "2025-01-23 15:36:52+00:00"
   },
   {
     "message_id": 280,
-    "file_path": "downloaded/msg_280.jpg",
+    "file_path": "msg_280.jpg",
     "phash": "0707773727272721",
     "publication_date": "2025-01-23 05:46:01+00:00"
   },
   {
     "message_id": 278,
-    "file_path": "downloaded/msg_278.jpg",
+    "file_path": "msg_278.jpg",
     "phash": "60f0ededced69400",
     "publication_date": "2025-01-21 05:45:06+00:00"
   },
   {
     "message_id": 265,
-    "file_path": "downloaded/msg_265.jpg",
+    "file_path": "msg_265.jpg",
     "phash": "01c1c38b0f070307",
     "publication_date": "2025-01-15 05:42:01+00:00"
   },
   {
     "message_id": 254,
-    "file_path": "downloaded/msg_254.jpg",
+    "file_path": "msg_254.jpg",
     "phash": "70fc5e0600000000",
     "publication_date": "2025-01-10 05:20:04+00:00"
   },
   {
     "message_id": 253,
-    "file_path": "downloaded/msg_253.jpg",
+    "file_path": "msg_253.jpg",
     "phash": "083c1c0e101f3f3f",
     "publication_date": "2025-01-09 05:36:01+00:00"
   },
   {
     "message_id": 252,
-    "file_path": "downloaded/msg_252.jpg",
+    "file_path": "msg_252.jpg",
     "phash": "04040e083c3c7c6f",
     "publication_date": "2025-01-08 05:36:01+00:00"
   },
   {
     "message_id": 251,
-    "file_path": "downloaded/msg_251.jpg",
+    "file_path": "msg_251.jpg",
     "phash": "02227b19191f1f1f",
     "publication_date": "2025-01-07 05:31:11+00:00"
   },
   {
     "message_id": 250,
-    "file_path": "downloaded/msg_250.jpg",
+    "file_path": "msg_250.jpg",
     "phash": "c0c0f7fffffffe7f",
     "publication_date": "2025-01-06 20:16:29+00:00"
   },
   {
     "message_id": 246,
-    "file_path": "downloaded/msg_246.jpg",
+    "file_path": "msg_246.jpg",
     "phash": "1818f2f3f0f8fe1f",
     "publication_date": "2025-01-04 05:26:01+00:00"
   },
   {
     "message_id": 245,
-    "file_path": "downloaded/msg_245.jpg",
+    "file_path": "msg_245.jpg",
     "phash": "d2f21b19117179fb",
     "publication_date": "2025-01-03 05:45:08+00:00"
   },
   {
     "message_id": 239,
-    "file_path": "downloaded/msg_239.jpg",
+    "file_path": "msg_239.jpg",
     "phash": "7e7e3c3c3c202824",
     "publication_date": "2024-12-31 05:05:09+00:00"
   },
   {
     "message_id": 235,
-    "file_path": "downloaded/msg_235.jpg",
+    "file_path": "msg_235.jpg",
     "phash": "0c04677f3c606063",
     "publication_date": "2024-12-29 05:53:12+00:00"
   },
   {
     "message_id": 230,
-    "file_path": "downloaded/msg_230.jpg",
+    "file_path": "msg_230.jpg",
     "phash": "000767dbc7c3301f",
     "publication_date": "2024-12-25 05:17:01+00:00"
   },
   {
     "message_id": 229,
-    "file_path": "downloaded/msg_229.jpg",
+    "file_path": "msg_229.jpg",
     "phash": "e7e79983818185ff",
     "publication_date": "2024-12-24 12:26:40+00:00"
   },
   {
     "message_id": 223,
-    "file_path": "downloaded/msg_223.jpg",
+    "file_path": "msg_223.jpg",
     "phash": "f8fefef3f3003f02",
     "publication_date": "2024-12-22 18:04:21+00:00"
   },
   {
-    "message_id": 221,
-    "file_path": "downloaded/msg_221.jpg",
-    "phash": "06c0e0f8f0fefcfe",
-    "publication_date": "2024-12-21 12:37:33+00:00"
-  },
-  {
     "message_id": 220,
-    "file_path": "downloaded/msg_220.jpg",
+    "file_path": "msg_220.jpg",
     "phash": "7e3ef0e0c0e0fef0",
     "publication_date": "2024-12-21 12:37:33+00:00"
   },
   {
+    "message_id": 221,
+    "file_path": "msg_221.jpg",
+    "phash": "06c0e0f8f0fefcfe",
+    "publication_date": "2024-12-21 12:37:33+00:00"
+  },
+  {
     "message_id": 217,
-    "file_path": "downloaded/msg_217.jpg",
+    "file_path": "msg_217.jpg",
     "phash": "0630787cf0f0c007",
     "publication_date": "2024-12-20 05:31:01+00:00"
   },
   {
     "message_id": 215,
-    "file_path": "downloaded/msg_215.jpg",
+    "file_path": "msg_215.jpg",
     "phash": "e6e79ee0e7e7f9e9",
     "publication_date": "2024-12-19 05:27:22+00:00"
   },
   {
     "message_id": 209,
-    "file_path": "downloaded/msg_209.jpg",
+    "file_path": "msg_209.jpg",
     "phash": "fd67610000060302",
     "publication_date": "2024-12-14 05:10:01+00:00"
   },
   {
     "message_id": 204,
-    "file_path": "downloaded/msg_204.jpg",
+    "file_path": "msg_204.jpg",
     "phash": "fffff904e6f2f0c0",
     "publication_date": "2024-12-11 05:07:01+00:00"
   },
   {
     "message_id": 203,
-    "file_path": "downloaded/msg_203.jpg",
+    "file_path": "msg_203.jpg",
     "phash": "002424e6cbdf9e3e",
     "publication_date": "2024-12-10 05:03:01+00:00"
   },
   {
     "message_id": 202,
-    "file_path": "downloaded/msg_202.jpg",
+    "file_path": "msg_202.jpg",
     "phash": "7f7f7fe5e4e088f8",
     "publication_date": "2024-12-09 05:24:01+00:00"
   },
   {
     "message_id": 201,
-    "file_path": "downloaded/msg_201.jpg",
+    "file_path": "msg_201.jpg",
     "phash": "0f0f078f9f9f1f8f",
     "publication_date": "2024-12-08 05:20:03+00:00"
   },
   {
     "message_id": 198,
-    "file_path": "downloaded/msg_198.jpg",
+    "file_path": "msg_198.jpg",
     "phash": "040606667f373130",
     "publication_date": "2024-12-07 08:13:28+00:00"
   },
   {
     "message_id": 195,
-    "file_path": "downloaded/msg_195.jpg",
+    "file_path": "msg_195.jpg",
     "phash": "04ecfbb6de062060",
     "publication_date": "2024-12-06 05:25:09+00:00"
   },
   {
     "message_id": 194,
-    "file_path": "downloaded/msg_194.jpg",
+    "file_path": "msg_194.jpg",
     "phash": "0c2c386c7c386060",
     "publication_date": "2024-12-05 05:52:01+00:00"
   },
   {
     "message_id": 191,
-    "file_path": "downloaded/msg_191.jpg",
+    "file_path": "msg_191.jpg",
     "phash": "0c003e3e78701c7c",
     "publication_date": "2024-12-02 05:49:01+00:00"
   },
   {
     "message_id": 183,
-    "file_path": "downloaded/msg_183.jpg",
+    "file_path": "msg_183.jpg",
     "phash": "4060f0f8b080003f",
     "publication_date": "2024-11-27 05:27:01+00:00"
   },
   {
-    "message_id": 180,
-    "file_path": "downloaded/msg_180.jpg",
-    "phash": "61796f061838c4c7",
-    "publication_date": "2024-11-25 05:36:01+00:00"
-  },
-  {
     "message_id": 179,
-    "file_path": "downloaded/msg_179.jpg",
+    "file_path": "msg_179.jpg",
     "phash": "cf1f3e34302042c0",
     "publication_date": "2024-11-25 05:36:01+00:00"
   },
   {
+    "message_id": 180,
+    "file_path": "msg_180.jpg",
+    "phash": "61796f061838c4c7",
+    "publication_date": "2024-11-25 05:36:01+00:00"
+  },
+  {
     "message_id": 177,
-    "file_path": "downloaded/msg_177.jpg",
+    "file_path": "msg_177.jpg",
     "phash": "f8f8f8fa323c1c08",
     "publication_date": "2024-11-23 05:25:06+00:00"
   },
   {
     "message_id": 170,
-    "file_path": "downloaded/msg_170.jpg",
+    "file_path": "msg_170.jpg",
     "phash": "1010f4f8f8f9f110",
     "publication_date": "2024-11-16 05:35:05+00:00"
   },
   {
     "message_id": 169,
-    "file_path": "downloaded/msg_169.jpg",
+    "file_path": "msg_169.jpg",
     "phash": "02071f1f8780080e",
     "publication_date": "2024-11-15 05:18:01+00:00"
   },
   {
     "message_id": 167,
-    "file_path": "downloaded/msg_167.jpg",
+    "file_path": "msg_167.jpg",
     "phash": "ffef7ce10190d078",
     "publication_date": "2024-11-13 05:09:01+00:00"
   },
   {
     "message_id": 166,
-    "file_path": "downloaded/msg_166.jpg",
+    "file_path": "msg_166.jpg",
     "phash": "d8f8f8fcd0400000",
     "publication_date": "2024-11-12 05:31:01+00:00"
   },
   {
     "message_id": 163,
-    "file_path": "downloaded/msg_163.jpg",
+    "file_path": "msg_163.jpg",
     "phash": "9f9f6f61b31f0501",
     "publication_date": "2024-11-10 05:40:06+00:00"
   },
   {
     "message_id": 159,
-    "file_path": "downloaded/msg_159.jpg",
+    "file_path": "msg_159.jpg",
     "phash": "e4c6870d0bb5b0c9",
     "publication_date": "2024-11-06 05:33:01+00:00"
   },
   {
     "message_id": 157,
-    "file_path": "downloaded/msg_157.jpg",
+    "file_path": "msg_157.jpg",
     "phash": "fffda400008125bd",
     "publication_date": "2024-11-05 05:32:30+00:00"
   },
   {
     "message_id": 152,
-    "file_path": "downloaded/msg_152.jpg",
+    "file_path": "msg_152.jpg",
     "phash": "f00e0713160e3c7c",
     "publication_date": "2024-11-02 05:13:01+00:00"
   },
   {
     "message_id": 149,
-    "file_path": "downloaded/msg_149.jpg",
+    "file_path": "msg_149.jpg",
     "phash": "0707060600040202",
     "publication_date": "2024-10-31 05:03:01+00:00"
   },
   {
     "message_id": 148,
-    "file_path": "downloaded/msg_148.jpg",
+    "file_path": "msg_148.jpg",
     "phash": "e0f0f0c8fcfce0e0",
     "publication_date": "2024-10-30 05:23:01+00:00"
   },
   {
     "message_id": 132,
-    "file_path": "downloaded/msg_132.jpg",
+    "file_path": "msg_132.jpg",
     "phash": "ff3f00009c3cfcfe",
     "publication_date": "2024-10-17 05:34:01+00:00"
   },
   {
-    "message_id": 130,
-    "file_path": "downloaded/msg_130.jpg",
-    "phash": "000000f8faf78f8f",
-    "publication_date": "2024-10-15 05:25:02+00:00"
-  },
-  {
     "message_id": 129,
-    "file_path": "downloaded/msg_129.jpg",
+    "file_path": "msg_129.jpg",
     "phash": "fc7e7fff30000000",
     "publication_date": "2024-10-15 05:25:02+00:00"
   },
   {
+    "message_id": 130,
+    "file_path": "msg_130.jpg",
+    "phash": "000000f8faf78f8f",
+    "publication_date": "2024-10-15 05:25:02+00:00"
+  },
+  {
     "message_id": 128,
-    "file_path": "downloaded/msg_128.jpg",
+    "file_path": "msg_128.jpg",
     "phash": "3efef4e4e0c18130",
     "publication_date": "2024-10-14 05:15:03+00:00"
   },
   {
     "message_id": 126,
-    "file_path": "downloaded/msg_126.jpg",
+    "file_path": "msg_126.jpg",
     "phash": "00001f1f0f1f0f06",
     "publication_date": "2024-10-13 07:40:25+00:00"
   },
   {
     "message_id": 123,
-    "file_path": "downloaded/msg_123.jpg",
+    "file_path": "msg_123.jpg",
     "phash": "87ffffefffb00000",
     "publication_date": "2024-10-10 05:21:01+00:00"
   },
   {
-    "message_id": 122,
-    "file_path": "downloaded/msg_122.jpg",
-    "phash": "0e1860714f6f3000",
-    "publication_date": "2024-10-09 05:35:05+00:00"
-  },
-  {
     "message_id": 121,
-    "file_path": "downloaded/msg_121.jpg",
+    "file_path": "msg_121.jpg",
     "phash": "203f1e00dcd83070",
     "publication_date": "2024-10-09 05:35:05+00:00"
   },
   {
+    "message_id": 122,
+    "file_path": "msg_122.jpg",
+    "phash": "0e1860714f6f3000",
+    "publication_date": "2024-10-09 05:35:05+00:00"
+  },
+  {
     "message_id": 117,
-    "file_path": "downloaded/msg_117.jpg",
+    "file_path": "msg_117.jpg",
     "phash": "0f3f2f1f3f010400",
     "publication_date": "2024-10-06 05:24:01+00:00"
   },
   {
     "message_id": 114,
-    "file_path": "downloaded/msg_114.jpg",
+    "file_path": "msg_114.jpg",
     "phash": "00040e187effc0c0",
     "publication_date": "2024-10-05 05:25:07+00:00"
   },
   {
     "message_id": 109,
-    "file_path": "downloaded/msg_109.jpg",
+    "file_path": "msg_109.jpg",
     "phash": "0c0c0c7c3d05064b",
     "publication_date": "2024-10-03 05:29:01+00:00"
   },
   {
     "message_id": 103,
-    "file_path": "downloaded/msg_103.jpg",
+    "file_path": "msg_103.jpg",
     "phash": "001002061c1c1800",
     "publication_date": "2024-10-01 05:17:01+00:00"
   },
   {
     "message_id": 95,
-    "file_path": "downloaded/msg_95.jpg",
+    "file_path": "msg_95.jpg",
     "phash": "ff3f0fc3c003397c",
     "publication_date": "2024-09-24 05:29:01+00:00"
   },
   {
     "message_id": 92,
-    "file_path": "downloaded/msg_92.jpg",
+    "file_path": "msg_92.jpg",
     "phash": "f0f0f0e0e0646cec",
     "publication_date": "2024-09-21 07:50:19+00:00"
   },
   {
-    "message_id": 85,
-    "file_path": "downloaded/msg_85.jpg",
-    "phash": "0606c18300430f9f",
-    "publication_date": "2024-09-18 15:23:34+00:00"
-  },
-  {
-    "message_id": 84,
-    "file_path": "downloaded/msg_84.jpg",
-    "phash": "30303f3c58980701",
-    "publication_date": "2024-09-18 15:23:34+00:00"
-  },
-  {
     "message_id": 83,
-    "file_path": "downloaded/msg_83.jpg",
+    "file_path": "msg_83.jpg",
     "phash": "0e6c1c7373331202",
     "publication_date": "2024-09-18 15:23:34+00:00"
   },
   {
+    "message_id": 84,
+    "file_path": "msg_84.jpg",
+    "phash": "30303f3c58980701",
+    "publication_date": "2024-09-18 15:23:34+00:00"
+  },
+  {
+    "message_id": 85,
+    "file_path": "msg_85.jpg",
+    "phash": "0606c18300430f9f",
+    "publication_date": "2024-09-18 15:23:34+00:00"
+  },
+  {
     "message_id": 81,
-    "file_path": "downloaded/msg_81.jpg",
+    "file_path": "msg_81.jpg",
     "phash": "1f3f3e0f03000000",
     "publication_date": "2024-09-17 06:40:16+00:00"
   },
   {
     "message_id": 68,
-    "file_path": "downloaded/msg_68.jpg",
+    "file_path": "msg_68.jpg",
     "phash": "100e3e1e1e360607",
     "publication_date": "2024-09-06 05:32:30+00:00"
   },
   {
     "message_id": 65,
-    "file_path": "downloaded/msg_65.jpg",
+    "file_path": "msg_65.jpg",
     "phash": "fc8045458bb1e0f1",
     "publication_date": "2024-09-04 13:49:55+00:00"
   },
   {
     "message_id": 59,
-    "file_path": "downloaded/msg_59.jpg",
+    "file_path": "msg_59.jpg",
     "phash": "1f1f18303e6c6c00",
     "publication_date": "2024-09-02 06:54:27+00:00"
   },
   {
     "message_id": 58,
-    "file_path": "downloaded/msg_58.jpg",
+    "file_path": "msg_58.jpg",
     "phash": "60f93f7c0cc7030b",
     "publication_date": "2024-09-01 05:42:01+00:00"
   },
   {
     "message_id": 55,
-    "file_path": "downloaded/msg_55.jpg",
+    "file_path": "msg_55.jpg",
     "phash": "e4e487070f0f1cf8",
     "publication_date": "2024-08-29 09:28:56+00:00"
   },
   {
-    "message_id": 50,
-    "file_path": "downloaded/msg_50.jpg",
-    "phash": "047fffe33f7f7f0e",
-    "publication_date": "2024-08-24 13:57:12+00:00"
-  },
-  {
     "message_id": 48,
-    "file_path": "downloaded/msg_48.jpg",
+    "file_path": "msg_48.jpg",
     "phash": "033fdfceccb80078",
     "publication_date": "2024-08-24 13:57:12+00:00"
   },
   {
+    "message_id": 50,
+    "file_path": "msg_50.jpg",
+    "phash": "047fffe33f7f7f0e",
+    "publication_date": "2024-08-24 13:57:12+00:00"
+  },
+  {
     "message_id": 38,
-    "file_path": "downloaded/msg_38.jpg",
+    "file_path": "msg_38.jpg",
     "phash": "436634387824e600",
     "publication_date": "2024-08-10 08:04:04+00:00"
   },
   {
     "message_id": 33,
-    "file_path": "downloaded/msg_33.jpg",
+    "file_path": "msg_33.jpg",
     "phash": "2070f4ffbfce6c20",
     "publication_date": "2024-08-09 07:53:33+00:00"
   },
   {
     "message_id": 29,
-    "file_path": "downloaded/msg_29.jpg",
+    "file_path": "msg_29.jpg",
     "phash": "1c07072727033323",
     "publication_date": "2024-08-07 06:43:53+00:00"
   },
   {
-    "message_id": 28,
-    "file_path": "downloaded/msg_28.jpg",
-    "phash": "00189f2f8fc00000",
-    "publication_date": "2024-08-06 07:21:10+00:00"
-  },
-  {
     "message_id": 27,
-    "file_path": "downloaded/msg_27.jpg",
+    "file_path": "msg_27.jpg",
     "phash": "0000c1f1fff8fffe",
     "publication_date": "2024-08-06 07:21:10+00:00"
   },
   {
-    "message_id": 26,
-    "file_path": "downloaded/msg_26.jpg",
-    "phash": "00c0e4e0f1f6f878",
-    "publication_date": "2024-08-05 08:08:07+00:00"
-  },
-  {
-    "message_id": 25,
-    "file_path": "downloaded/msg_25.jpg",
-    "phash": "01191c160e02367e",
-    "publication_date": "2024-08-05 08:08:07+00:00"
-  },
-  {
-    "message_id": 24,
-    "file_path": "downloaded/msg_24.jpg",
-    "phash": "203f1e00dcd83070",
-    "publication_date": "2024-08-05 08:08:07+00:00"
+    "message_id": 28,
+    "file_path": "msg_28.jpg",
+    "phash": "00189f2f8fc00000",
+    "publication_date": "2024-08-06 07:21:10+00:00"
   },
   {
     "message_id": 23,
-    "file_path": "downloaded/msg_23.jpg",
+    "file_path": "msg_23.jpg",
     "phash": "040c3ce67e1f0408",
     "publication_date": "2024-08-05 08:08:07+00:00"
   },
   {
+    "message_id": 25,
+    "file_path": "msg_25.jpg",
+    "phash": "01191c160e02367e",
+    "publication_date": "2024-08-05 08:08:07+00:00"
+  },
+  {
+    "message_id": 26,
+    "file_path": "msg_26.jpg",
+    "phash": "00c0e4e0f1f6f878",
+    "publication_date": "2024-08-05 08:08:07+00:00"
+  },
+  {
     "message_id": 19,
-    "file_path": "downloaded/msg_19.jpg",
+    "file_path": "msg_19.jpg",
     "phash": "1038ffef66202000",
     "publication_date": "2024-08-03 13:51:13+00:00"
   }

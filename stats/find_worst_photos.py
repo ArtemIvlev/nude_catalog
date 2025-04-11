@@ -2,6 +2,7 @@ import sqlite3
 import logging
 from pathlib import Path
 from datetime import datetime, timedelta
+from config import DB_FILE
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -12,14 +13,15 @@ def find_worst_photos(days_ago=None):
     try:
         # Подключаемся к базе
         logger.info("Подключение к базе данных...")
-        conn = sqlite3.connect('database.db')
+        conn = sqlite3.connect(DB_FILE)
         cur = conn.cursor()
         
         # Формируем условие для даты
         date_condition = ""
         if days_ago is not None:
             date = (datetime.now() - timedelta(days=days_ago)).strftime('%Y-%m-%d')
-            date_condition = f"AND publication_date < '{date}'"
+            date_condition = ""
+#            date_condition = f"AND publication_date < '{date}'"
         
         # Находим фотографии с самыми низкими ненулевыми показателями
         cur.execute(f"""
@@ -66,9 +68,9 @@ def find_worst_photos(days_ago=None):
         stats = cur.fetchone()
         logger.info(f"\nОбщая статистика {period} (для ненулевых значений):")
         logger.info(f"Всего фотографий с ненулевой статистикой: {stats[0]}")
-        logger.info(f"Средние просмотры: {stats[1]:.4f}")
-        logger.info(f"Средние пересылки: {stats[2]:.4f}")
-        logger.info(f"Средний общий скор: {stats[3]:.4f}")
+#        logger.info(f"Средние просмотры: {stats[1]:.4f}")
+#        logger.info(f"Средние пересылки: {stats[2]:.4f}")
+#        logger.info(f"Средний общий скор: {stats[3]:.4f}")
         
         conn.close()
         

@@ -5,6 +5,7 @@ import imagehash
 from PIL import Image
 from tqdm import tqdm
 import sys
+from config import DB_FILE, TELEGRAM_DB
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -40,10 +41,10 @@ def compare_phash():
     try:
         # Подключаемся к базам данных
         logger.info("Подключение к базам данных...")
-        main_conn = sqlite3.connect('database.db')
+        main_conn = sqlite3.connect(DB_FILE)
         main_cur = main_conn.cursor()
         
-        telegram_conn = sqlite3.connect('../telegram_bot/published_photos.sqlite')
+        telegram_conn = sqlite3.connect(TELEGRAM_DB)
         telegram_cur = telegram_conn.cursor()
         
         # Получаем все фотографии из телеграм канала

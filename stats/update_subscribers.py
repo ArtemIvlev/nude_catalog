@@ -1,7 +1,14 @@
 import sqlite3
+import logging
+from pathlib import Path
+from config import DB_FILE, TELEGRAM_DB, TABLE_NAME, STATUS_PUBLISHED
 from datetime import datetime, date
 import sys
 import os
+
+# Настройка логирования
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def interpolate_subscribers(post_date, start_date, end_date, start_subs, end_subs):
     """Линейная интерполяция количества подписчиков"""
@@ -24,7 +31,7 @@ def update_subscribers():
     end_subs = 1550
     
     # Подключаемся к базе данных
-    conn = sqlite3.connect('../telegram_bot/published_photos.sqlite')
+    conn = sqlite3.connect(TELEGRAM_DB)
     cur = conn.cursor()
     
     # Создаем таблицу для статистики подписчиков, если её нет

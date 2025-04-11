@@ -3,6 +3,8 @@ import logging
 from pathlib import Path
 from collections import defaultdict
 from tqdm import tqdm
+from config import *
+
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -13,7 +15,7 @@ def analyze_published_delta():
     try:
         # Подключаемся к базам данных
         logger.info("Подключение к базам данных...")
-        main_conn = sqlite3.connect('database.db')
+        main_conn = sqlite3.connect('DB_FILE')
         main_cur = main_conn.cursor()
         
         telegram_conn = sqlite3.connect('../telegram_bot/published_photos.sqlite')

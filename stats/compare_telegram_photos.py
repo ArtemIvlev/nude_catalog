@@ -3,6 +3,7 @@ import logging
 import os
 from pathlib import Path
 import glob
+from config import DB_FILE, TELEGRAM_DB, TABLE_NAME
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -13,7 +14,7 @@ def compare_telegram_photos():
     try:
         # Подключаемся к базе
         logger.info("Подключение к базе данных...")
-        conn = sqlite3.connect('database.db')
+        conn = sqlite3.connect(DB_FILE)
         cur = conn.cursor()
         
         # Получаем все фотографии из базы данных

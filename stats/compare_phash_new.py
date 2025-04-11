@@ -7,6 +7,7 @@ from tqdm import tqdm
 import sys
 import cv2
 import numpy as np
+from config import DB_FILE, TELEGRAM_DB, TABLE_NAME
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -137,10 +138,10 @@ def compare_phash():
     try:
         # Подключаемся к базам данных
         logger.info("Подключение к базам данных...")
-        main_conn = sqlite3.connect('database.db')
+        main_conn = sqlite3.connect(DB_FILE)
         main_cur = main_conn.cursor()
         
-        telegram_conn = sqlite3.connect('../telegram_bot/published_photos.sqlite')
+        telegram_conn = sqlite3.connect(TELEGRAM_DB)
         telegram_cur = telegram_conn.cursor()
         
         # Добавляем поле processed, если его нет
@@ -199,7 +200,7 @@ def compare_phash():
             if not phash:
                 # Если pHash не вычислен, вычисляем его
                 try:
-                    image = Image.open(f"../telegram_bot/{file_path}")
+                    image = Image.open(f"../telegram_bot/downloaded/{file_path}")
                     phash = str(imagehash.average_hash(image))
                     
                     # Сохраняем pHash в базу данных телеграм бота
@@ -247,7 +248,7 @@ def compare_phash():
                 
                 # Этап 3: Строгое сравнение с помощью SIFT только для фотографий с схожестью выше порога
                 if similar_photos:
-                    telegram_path = f"../telegram_bot/{file_path}"
+                    telegram_path = f"../telegram_bot/downloaded/{file_path}"
                     
                     # Фильтруем фотографии с схожестью выше порога
                     high_similarity_photos = [p for p in similar_photos if p[1] >= loose_threshold]

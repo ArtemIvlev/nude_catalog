@@ -1,5 +1,7 @@
 import sqlite3
 import logging
+from pathlib import Path
+from config import DB_FILE, TELEGRAM_DB, TABLE_NAME, STATUS_PUBLISHED
 from tqdm import tqdm
 
 # Настройка логирования
