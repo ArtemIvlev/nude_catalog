@@ -13,19 +13,8 @@ logger = logging.getLogger(__name__)
 
 # Массив с путями к тестовым файлам
 TEST_FILES = [
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Василиса Аникина/_DSC9336.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9610.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9632.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9600.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9617.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9580.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9583.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9626.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9615.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9667.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9594.jpg",
-    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Ксю (@ksu_oh)/Домашка2_Кухня/_DSC9652.jpg"
-]
+    "/mnt/smb/OneDrive/Pictures/!Фотосессии/Никита Маша/_DSC6072.jpg"
+    ]
 
 def test_face_detection(image_path):
     """

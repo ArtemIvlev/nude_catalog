@@ -15,6 +15,12 @@ from nsfw_detector import MarqoNSFWDetector
 from clip_classifier import CLIPNudeChecker
 from opennsfw2_detector import OpenNSFW2Detector
 from face_detector import FaceDetector
+from concurrent.futures import ProcessPoolExecutor, as_completed
+import multiprocessing
+import gc
+from PIL.ExifTags import TAGS
+import time
+import imagehash
 
 logger = logging.getLogger(__name__)
 
@@ -26,8 +32,44 @@ DB_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "DB", "d
 TABLE_NAME = "photos_ok"
 MIN_IMAGE_SIZE = 100
 MAX_IMAGE_SIZE = 10000
+MAX_WORKERS = min(4, multiprocessing.cpu_count())  # Ограничиваем количество процессов
 
-# === База данных ===
+# Настройка TensorFlow для GPU
+physical_devices = tf.config.list_physical_devices('GPU')
+if physical_devices:
+    try:
+        # Включаем память GPU по требованию
+        for device in physical_devices:
+            tf.config.experimental.set_memory_growth(device, True)
+        logger.info(f"✅ Найдено {len(physical_devices)} GPU устройств")
+    except RuntimeError as e:
+        logger.error(f"❌ Ошибка при настройке GPU: {e}")
+else:
+    logger.warning("⚠️ GPU не найдены, используется CPU")
+
+# Оптимизация производительности
+tf.config.optimizer.set_jit(True)  # Включаем XLA оптимизации
+tf.config.optimizer.set_experimental_options({
+    'layout_optimizer': True,
+    'constant_folding': True,
+    'shape_optimization': True,
+    'remapping': True,
+    'arithmetic_optimization': True,
+    'dependency_optimization': True,
+    'loop_optimization': True,
+    'function_optimization': True,
+    'debug_stripper': True,
+})
+
+logger.info("✅ TensorFlow настроен для работы на CPU")
+
+# Инициализация глобальных моделей
+logger.info("🔄 Инициализация моделей...")
+nsfw_detector = MarqoNSFWDetector()
+opennsfw2_detector = OpenNSFW2Detector()
+face_detector = FaceDetector()
+logger.info("✅ Модели инициализированы")
+
 def connect_db():
     """Подключение к базе данных"""
     try:
@@ -36,6 +78,54 @@ def connect_db():
     except sqlite3.Error as e:
         logger.error(f"❌ Ошибка подключения к БД: {e}")
         return None
+
+def get_image_dates(image_path):
+    """
+    Получает дату съемки и дату изменения изображения
+    
+    Args:
+        image_path: путь к изображению
+        
+    Returns:
+        tuple: (дата_съемки, дата_изменения) в формате ISO
+    """
+    try:
+        # Получаем дату изменения файла
+        mtime = os.path.getmtime(image_path)
+        modification_date = datetime.fromtimestamp(mtime).isoformat()
+        
+        # Пытаемся получить дату съемки из EXIF
+        with Image.open(image_path) as img:
+            exif = img._getexif()
+            if exif:
+                # Ищем теги с датой
+                for tag_id in exif:
+                    tag = TAGS.get(tag_id, tag_id)
+                    if tag == 'DateTimeOriginal':
+                        # Преобразуем строку даты в ISO формат
+                        date_str = exif[tag_id]
+                        try:
+                            shooting_date = datetime.strptime(date_str, '%Y:%m:%d %H:%M:%S').isoformat()
+                            return shooting_date, modification_date
+                        except ValueError:
+                            pass
+                    elif tag == 'DateTimeDigitized':
+                        # Альтернативный тег даты
+                        date_str = exif[tag_id]
+                        try:
+                            shooting_date = datetime.strptime(date_str, '%Y:%m:%d %H:%M:%S').isoformat()
+                            return shooting_date, modification_date
+                        except ValueError:
+                            pass
+        
+        # Если не нашли дату съемки, используем дату изменения
+        return modification_date, modification_date
+        
+    except Exception as e:
+        logger.error(f"❌ Ошибка при получении дат изображения {image_path}: {str(e)}")
+        # В случае ошибки возвращаем текущую дату
+        current_date = datetime.now().isoformat()
+        return current_date, current_date
 
 def ensure_table_schema(conn):
     """Создание таблицы, если не существует"""
@@ -60,7 +150,9 @@ def ensure_table_schema(conn):
         normalized_views REAL,
         normalized_forwards REAL,
         publication_date TEXT,
-        message_id TEXT
+        message_id TEXT,
+        shooting_date TEXT,
+        modification_date TEXT
     )
     ''')
     
@@ -82,7 +174,9 @@ def ensure_table_schema(conn):
         'normalized_views': "REAL",
         'normalized_forwards': "REAL",
         'publication_date': "TEXT",
-        'message_id': "TEXT"
+        'message_id': "TEXT",
+        'shooting_date': "TEXT",
+        'modification_date': "TEXT"
     }
     
     for col, coltype in expected_columns.items():
@@ -91,7 +185,6 @@ def ensure_table_schema(conn):
     
     conn.commit()
 
-# === Утилиты ===
 def compute_sha256(filepath):
     """Вычисление SHA256 хеша файла"""
     with open(filepath, "rb") as f:
@@ -162,8 +255,15 @@ def analyze_photo(image_path):
         height, width = image.shape[:2]
         channels = image.shape[2] if len(image.shape) > 2 else 1
         
+        # Вычисляем phash
+        try:
+            pil_image = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+            phash = str(imagehash.average_hash(pil_image))
+        except Exception as e:
+            logger.error(f"❌ Ошибка при вычислении phash: {str(e)}")
+            phash = None
+        
         # Анализируем NSFW контент
-        nsfw_detector = MarqoNSFWDetector()
         nsfw_result = nsfw_detector.analyze_image(image_path)
         
         # Безопасно получаем данные NSFW анализа
@@ -172,15 +272,7 @@ def analyze_photo(image_path):
         confidence = nsfw_result.get('confidence', 0.0)
         
         # Анализируем OpenNSFW2
-        opennsfw2_detector = OpenNSFW2Detector()
         opennsfw2_result = opennsfw2_detector.analyze_image(image_path)
-        
-
-        # Загружаем изображение
-
-        
-        # Создаем детектор лиц
-        face_detector = FaceDetector()
         
         # Обнаруживаем лица
         result = face_detector.detect_faces(image)
@@ -192,8 +284,6 @@ def analyze_photo(image_path):
         
         logger.info(f"👥 Обнаружено лиц: {face_count}")
         
-   
-
         # Объединяем результаты
         result = {
             'nsfw_score': nsfw_score,
@@ -206,7 +296,8 @@ def analyze_photo(image_path):
             'face_count': face_count,
             'face_locations': face_locations,
             'face_angles': face_angles,
-            'face_landmarks': []
+            'face_landmarks': [],
+            'phash': phash
         }
         
         return result
@@ -231,45 +322,45 @@ def process_image(image_path):
             logger.warning(f"⚠️ Изображение слишком маленькое или большое: {image_path}")
             return None
             
+        # Получаем даты изображения
+        shooting_date, modification_date = get_image_dates(image_path)
+            
         # Анализируем фото
         result = analyze_photo(image_path)
         if result is None:
             return None
             
-        # Получаем результаты анализа
-        nsfw_score = float(result['nsfw_score'])
-        is_erotic = bool(result['is_erotic'])
-        confidence = float(result['confidence'])
+        # Безопасно получаем результаты анализа
+        nsfw_score = float(result.get('nsfw_score', 0.0))
+        is_erotic = bool(result.get('is_erotic', False))
+        confidence = float(result.get('confidence', 0.0))
+        face_count = int(result.get('face_count', 0))
+        phash = result.get('phash', '')
         
         # Определяем категорию на основе всех доступных данных
         is_nsfw = nsfw_score > 0.5 or is_erotic
         
         # Если есть детали от OpenNSFW2, учитываем их
+        clip_nude_score = 0.0
         if 'details' in result and 'opennsfw2_analysis' in result['details']:
-            opennsfw2_score = result['details']['opennsfw2_analysis'].get('nsfw_score', 0.0)
-            # Если OpenNSFW2 считает изображение NSFW с высокой уверенностью
-            if opennsfw2_score > 0.8:
-                is_nsfw = True
-                confidence = max(confidence, opennsfw2_score)
+            clip_nude_score = float(result['details']['opennsfw2_analysis'].get('nsfw_score', 0.0))
         
-        # Определяем финальную категорию
-        category = 'unsafe' if is_nsfw else 'safe'
-        
-        return {
-            'path': image_path,
-            'category': category,
+        # Формируем итоговый результат
+        final_result = {
+            'is_nsfw': is_nsfw,
             'nsfw_score': nsfw_score,
-            'is_erotic': is_erotic,
+            'clip_nude_score': clip_nude_score,
+            'face_count': face_count,
             'confidence': confidence,
-            'face_count': result.get('face_count', 0),
-            'face_locations': result.get('face_locations', []),
-            'face_angles': result.get('face_angles', []),
-            'face_landmarks': result.get('face_landmarks', []),
-            'details': result.get('details', {})
+            'shooting_date': shooting_date,
+            'modification_date': modification_date,
+            'phash': phash
         }
         
+        return final_result
+        
     except Exception as e:
-        logger.error(f"❌ Ошибка при обработке {image_path}: {str(e)}")
+        logger.error(f"❌ Ошибка при обработке изображения: {str(e)}")
         return None
 
 def print_result(result):
@@ -301,127 +392,107 @@ def print_result(result):
 
 def process_directory(directory_path):
     """
-    Обработка всех изображений в директории
+    Обрабатывает все изображения в директории последовательно
     
     Args:
         directory_path: путь к директории с изображениями
     """
-    # Подключаемся к БД
-    conn = connect_db()
-    if not conn:
-        return
-    
-    # Создаем таблицу, если не существует
-    ensure_table_schema(conn)
-    cursor = conn.cursor()
-    
-    # Получаем список всех файлов
     try:
-        all_files = list(find_all_jpgs(directory_path))
-    except Exception as e:
-        logger.error(f"❌ Ошибка при чтении директории: {e}")
-        return
+        # Подключаемся к БД
+        conn = connect_db()
+        if not conn:
+            return
+            
+        # Создаем таблицу если нужно
+        ensure_table_schema(conn)
         
-    total_files = len(all_files)
-    processed = 0
-    safe_count = 0
-    unsafe_count = 0
-    
-    logger.info(f"\n🔍 Найдено файлов: {total_files}")
-    
-    # Обрабатываем каждый файл
-    for path in tqdm(all_files, desc="🔬 Анализ"):
-        processed += 1
+        # Получаем список всех jpg файлов
+        image_paths = list(find_all_jpgs(directory_path))
+        total_images = len(image_paths)
         
-        # Пропуск, если уже есть
-        cursor.execute(f"SELECT id FROM {TABLE_NAME} WHERE path = ?", (path,))
-        if cursor.fetchone():
-            continue
+        if total_images == 0:
+            logger.info("❌ Изображения не найдены")
+            return
+            
+        logger.info(f"📸 Найдено {total_images} изображений")
         
-        logger.info(f"[{processed}/{total_files}] Обработка: {os.path.basename(path)}")
-        
-        # Вычисляем хеш
-        sha256 = compute_sha256(path)
-        
-        # Проверяем изображение
-        result = process_image(path)
-        if result:
-            is_safe = not result['is_erotic']
-            nsfw_score = result['nsfw_score']
-            confidence = result['confidence']
-            face_count = result['face_count']
-            
-            # Получаем opennsfw2_score
-            opennsfw2_score = 0.0
-            if 'details' in result and 'opennsfw2_analysis' in result['details']:
-                opennsfw2_score = result['details']['opennsfw2_analysis'].get('nsfw_score', 0.0)
-            
-            # Увеличиваем счетчики
-            if is_safe:
-                safe_count += 1
-            else:
-                unsafe_count += 1
-            
-            logger.info(f"path {path}")
-            logger.info(f"is_safe {is_safe}")
-            logger.info(f"confidence {confidence}")
-            logger.info(f"face_count {face_count}")
-            logger.info(f"opennsfw2_score {opennsfw2_score}")
-            
-            logger.info(f"--------------------------------")
-            
-            # Определяем, есть ли лица
-            has_face = face_count > 0
-            
-            # Определяем, маленькое ли изображение
-            is_small = is_image_small(path)
-            
-            # Обновляем БД
-            try:
-                status = 'review'
-                
-                cursor.execute(f'''
-                    INSERT INTO {TABLE_NAME}
-                    (path, is_nude, has_face, hash_sha256, clip_nude_score, nsfw_score, is_small, status)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                ''', (path, int(not is_safe), has_face, sha256, opennsfw2_score, nsfw_score, is_small, status))
-                
-                conn.commit()
-                
-                # Выводим результат
-                status_text = "✅ Безопасно" if is_safe else "❌ Небезопасно"
-                logger.info(f"  {status_text} (уверенность: {confidence:.3f})")
+        # Обрабатываем изображения последовательно
+        with tqdm(total=total_images, desc="Обработка изображений") as pbar:
+            for path in image_paths:
+                try:
+                    result = process_image(path)
+                    if result:
+                        # Безопасно получаем значения из результата
+                        is_nsfw = result.get('is_nsfw', False)
+                        nsfw_score = result.get('nsfw_score', 0.0)
+                        face_count = result.get('face_count', 0)
+                        clip_nude_score = result.get('clip_nude_score', 0.0)
+                        shooting_date = result.get('shooting_date', '')
+                        modification_date = result.get('modification_date', '')
+                        phash = result.get('phash', '')
+                        
+                        # Сохраняем результат в БД
+                        cursor = conn.cursor()
+                        cursor.execute(f"""
+                            INSERT OR REPLACE INTO {TABLE_NAME} 
+                            (path, is_nude, has_face, hash_sha256, clip_nude_score, nsfw_score, is_small, status, shooting_date, modification_date, phash)
+                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """, (
+                            path,
+                            int(is_nsfw),
+                            int(face_count > 0),
+                            compute_sha256(path),
+                            clip_nude_score,
+                            nsfw_score,
+                            is_image_small(path),
+                            'review',
+                            shooting_date,
+                            modification_date,
+                            phash
+                        ))
+                        conn.commit()
+                        
+                        # Выводим результат
+                        status_text = "✅ Безопасно" if not is_nsfw else "❌ Небезопасно"
+                        logger.info(f"  {status_text} (уверенность: {nsfw_score:.3f})")
+                except Exception as e:
+                    logger.error(f"❌ Ошибка при обработке {path}: {str(e)}")
+                finally:
+                    pbar.update(1)
                     
-            except sqlite3.Error as e:
-                logger.error(f"  ❌ Ошибка при обновлении БД: {e}")
-        else:
-            logger.error(f"❌ Ошибка при обработке {path}")
-    
-    # Выводим итоги
-    logger.info("\n📊 Итоги:")
-    logger.info(f"  - Всего обработано: {total_files}")
-    logger.info(f"  - Безопасно: {safe_count}")
-    logger.info(f"  - Небезопасно: {unsafe_count}")
-    
-    conn.close()
+                    # Очищаем память после каждой обработки
+                    gc.collect()
+                    tf.keras.backend.clear_session()
+        
+        conn.close()
+        logger.info("✅ Обработка завершена")
+        
+    except Exception as e:
+        logger.error(f"❌ Ошибка при обработке директории: {str(e)}")
+        if conn:
+            conn.close()
 
 def main():
     # Настройка логирования
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        format='%(asctime)s - %(levelname)s - %(message)s'
     )
     
-    if len(sys.argv) > 1:
-        directory_path = sys.argv[1]
-    else:
-        directory_path = PHOTO_DIR
+    try:
+        # Обрабатываем директорию
+        process_directory(PHOTO_DIR)
         
-    if not os.path.isdir(directory_path):
-        logger.error(f"❌ Ошибка: {directory_path} не является директорией")
-        return
-        
-    process_directory(directory_path)
+    except Exception as e:
+        logger.error(f"❌ Ошибка: {str(e)}")
+    finally:
+        # Очищаем ресурсы при завершении
+        global nsfw_detector, opennsfw2_detector, face_detector
+        del nsfw_detector
+        del opennsfw2_detector
+        del face_detector
+        gc.collect()
+        tf.keras.backend.clear_session()
 
 if __name__ == "__main__":
     main()
