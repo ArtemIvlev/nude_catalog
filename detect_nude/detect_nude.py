@@ -1,5 +1,9 @@
 import os
 import sys
+
+# Добавляем путь к корневой директории nude_catalog
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import cv2
 import numpy as np
 from PIL import Image
@@ -21,6 +25,16 @@ import gc
 from PIL.ExifTags import TAGS
 import time
 import imagehash
+
+# Настройка логирования
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
 from config import (
     PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE,
     MAX_IMAGE_SIZE, MAX_WORKERS, NSFW_THRESHOLD,
