@@ -416,10 +416,25 @@ def process_directory(directory_path):
             
         logger.info(f"📸 Найдено {total_images} изображений")
         
+        # Получаем список уже обработанных изображений
+        cursor = conn.cursor()
+        cursor.execute(f"SELECT path FROM {TABLE_NAME}")
+        processed_paths = {row[0] for row in cursor.fetchall()}
+        
+        # Счетчики для статистики
+        skipped_count = 0
+        processed_count = 0
+        
         # Обрабатываем изображения последовательно
         with tqdm(total=total_images, desc="Обработка изображений") as pbar:
             for path in image_paths:
                 try:
+                    # Проверяем, есть ли уже это изображение в базе
+                    if path in processed_paths:
+                        skipped_count += 1
+                        pbar.update(1)
+                        continue
+                        
                     result = process_image(path)
                     if result:
                         # Безопасно получаем значения из результата
@@ -451,33 +466,45 @@ def process_directory(directory_path):
                             phash
                         ))
                         conn.commit()
+                        processed_count += 1
                         
-                        # Выводим результат
-                        status_text = "✅ Безопасно" if not is_nsfw else "❌ Небезопасно"
-                        logger.info(f"  {status_text} (уверенность: {nsfw_score:.3f})")
                 except Exception as e:
                     logger.error(f"❌ Ошибка при обработке {path}: {str(e)}")
-                finally:
-                    pbar.update(1)
                     
-                    # Очищаем память после каждой обработки
-                    gc.collect()
-                    tf.keras.backend.clear_session()
-        
-        conn.close()
-        logger.info("✅ Обработка завершена")
+                pbar.update(1)
+                
+        logger.info(f"✅ Обработка завершена:")
+        logger.info(f"   - Пропущено (уже в базе): {skipped_count}")
+        logger.info(f"   - Обработано новых: {processed_count}")
+        logger.info(f"   - Всего: {total_images}")
         
     except Exception as e:
         logger.error(f"❌ Ошибка при обработке директории: {str(e)}")
+    finally:
         if conn:
             conn.close()
 
 def main():
+    # Создаем директорию для логов если её нет
+    log_dir = "logs"
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+        
+    # Формируем имя файла лога с текущей датой
+    current_date = datetime.now().strftime('%Y-%m-%d')
+    log_file = os.path.join(log_dir, f'detect_nude_{current_date}.log')
+    
     # Настройка логирования
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s'
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file, encoding='utf-8'),
+            logging.StreamHandler()  # Для вывода в консоль
+        ]
     )
+    
+    logger.info(f"🔄 Начало обработки. Логи сохраняются в {log_file}")
     
     try:
         # Обрабатываем директорию
