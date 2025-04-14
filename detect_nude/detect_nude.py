@@ -35,7 +35,7 @@ logging.basicConfig(
     ]
 )
 
-from config import (
+from nude_catalog.config import (
     PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE,
     MAX_IMAGE_SIZE, MAX_WORKERS, NSFW_THRESHOLD,
     CLIP_THRESHOLD, STATUS_REVIEW, STATUS_APPROVED,
