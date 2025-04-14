@@ -23,17 +23,14 @@ import time
 import imagehash
 from config import (
     PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE,
-    NSFW_THRESHOLD, CLIP_THRESHOLD, LOG_DIR,
-    STATUS_REVIEW, STATUS_APPROVED, STATUS_REJECTED, STATUS_PUBLISHED
+    MAX_IMAGE_SIZE, MAX_WORKERS, NSFW_THRESHOLD,
+    CLIP_THRESHOLD, STATUS_REVIEW, STATUS_APPROVED,
+    STATUS_REJECTED, STATUS_PUBLISHED
 )
 
 logger = logging.getLogger(__name__)
 
 sys.path.append("./")
-
-# Дополнительные константы
-MAX_IMAGE_SIZE = 10000
-MAX_WORKERS = min(4, multiprocessing.cpu_count())  # Ограничиваем количество процессов
 
 # Настройка TensorFlow для GPU
 physical_devices = tf.config.list_physical_devices('GPU')
