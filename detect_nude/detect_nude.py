@@ -30,7 +30,7 @@ sys.path.append("./")
 PHOTO_DIR = r"/mnt/smb/OneDrive/Pictures/!Фотосессии/"
 DB_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "DB", "database.db"))
 TABLE_NAME = "photos_ok"
-MIN_IMAGE_SIZE = 100
+MIN_IMAGE_SIZE = 2500
 MAX_IMAGE_SIZE = 10000
 MAX_WORKERS = min(4, multiprocessing.cpu_count())  # Ограничиваем количество процессов
 
@@ -486,13 +486,12 @@ def process_directory(directory_path):
 
 def main():
     # Создаем директорию для логов если её нет
-    log_dir = "logs"
-    if not os.path.exists(log_dir):
-        os.makedirs(log_dir)
+    if not os.path.exists(LOG_DIR):
+        os.makedirs(LOG_DIR)
         
     # Формируем имя файла лога с текущей датой
     current_date = datetime.now().strftime('%Y-%m-%d')
-    log_file = os.path.join(log_dir, f'detect_nude_{current_date}.log')
+    log_file = os.path.join(LOG_DIR, f'detect_nude_{current_date}.log')
     
     # Настройка логирования
     logging.basicConfig(
