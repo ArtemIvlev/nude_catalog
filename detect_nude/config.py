@@ -1,8 +1,13 @@
 import os
+import sys
 from dotenv import load_dotenv
+
+# Добавляем корневую директорию в sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Загружаем переменные окружения
 load_dotenv()
+
 
 # Пути к файлам и директориям
 PHOTO_DIR = os.getenv('PHOTO_DIR', r"/mnt/smb/OneDrive/Pictures/!Фотосессии/")
@@ -44,3 +49,5 @@ PG_CONNECTION_PARAMS = {
     'user': POSTGRES_USER,
     'password': POSTGRES_PASSWORD
 } 
+
+MAX_WORKERS = 1 # Ограничиваем количество процессов

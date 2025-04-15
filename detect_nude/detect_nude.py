@@ -2,7 +2,8 @@ import os
 import sys
 
 # Добавляем путь к корневой директории nude_catalog
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, root_dir)
 
 import cv2
 import numpy as np
@@ -25,7 +26,16 @@ import gc
 from PIL.ExifTags import TAGS
 import time
 import imagehash
-from config import LOG_DIR, PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE, MAX_IMAGE_SIZE
+
+# Импортируем конфиг из корневой директории
+sys.path.remove(os.path.dirname(__file__))  # Временно удаляем текущую директорию из путей
+from config import (
+    PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE,
+    MAX_IMAGE_SIZE, MAX_WORKERS, NSFW_THRESHOLD,
+    CLIP_THRESHOLD, STATUS_REVIEW, STATUS_APPROVED,
+    STATUS_REJECTED, STATUS_PUBLISHED, LOG_DIR
+)
+sys.path.append(os.path.dirname(__file__))  # Возвращаем текущую директорию в пути
 
 # Настройка логирования
 logging.basicConfig(
@@ -34,13 +44,6 @@ logging.basicConfig(
     handlers=[
         logging.StreamHandler(sys.stdout)
     ]
-)
-
-from nude_catalog.config import (
-    PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE,
-    MAX_IMAGE_SIZE, MAX_WORKERS, NSFW_THRESHOLD,
-    CLIP_THRESHOLD, STATUS_REVIEW, STATUS_APPROVED,
-    STATUS_REJECTED, STATUS_PUBLISHED, LOG_DIR
 )
 
 logger = logging.getLogger(__name__)
