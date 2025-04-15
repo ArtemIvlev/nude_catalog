@@ -1,5 +1,10 @@
 import os
 import sys
+
+# Добавляем путь к корневой директории nude_catalog
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, root_dir)
+
 import cv2
 import numpy as np
 from PIL import Image
@@ -20,8 +25,10 @@ import gc
 from PIL.ExifTags import TAGS
 import time
 import imagehash
-from postgres_db import connect_db, ensure_table_schema, insert_or_update_photo, get_photo_by_path
+
+# Импортируем конфиг и функции для работы с PostgreSQL
 from config import PHOTO_DIR, TABLE_NAME, MIN_IMAGE_SIZE, MAX_IMAGE_SIZE, MAX_WORKERS, LOG_DIR
+from detect_nude.postgres_db import connect_db, ensure_table_schema, insert_or_update_photo, get_photo_by_path
 
 logger = logging.getLogger(__name__)
 

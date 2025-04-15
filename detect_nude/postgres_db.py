@@ -1,8 +1,14 @@
 import os
+import sys
 import logging
 import psycopg2
 from psycopg2.extras import DictCursor
-from .config import TABLE_NAME, PG_CONNECTION_PARAMS
+
+# Добавляем корневую директорию в sys.path
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, root_dir)
+
+from config import TABLE_NAME, PG_CONNECTION_PARAMS
 
 # Настройка логирования
 logging.basicConfig(
