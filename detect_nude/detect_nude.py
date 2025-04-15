@@ -1,5 +1,9 @@
 import os
 import sys
+
+# Добавляем путь к корневой директории nude_catalog
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import cv2
 import numpy as np
 from PIL import Image
@@ -23,17 +27,25 @@ import time
 import imagehash
 from config import LOG_DIR, PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE, MAX_IMAGE_SIZE
 
+# Настройка логирования
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
+from nude_catalog.config import (
+    PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE,
+    MAX_IMAGE_SIZE, MAX_WORKERS, NSFW_THRESHOLD,
+    CLIP_THRESHOLD, STATUS_REVIEW, STATUS_APPROVED,
+    STATUS_REJECTED, STATUS_PUBLISHED, LOG_DIR
+)
+
 logger = logging.getLogger(__name__)
 
 sys.path.append("./")
-
-# === Конфигурация ===
-PHOTO_DIR = r"/mnt/smb/OneDrive/Pictures/!Фотосессии/"
-DB_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "DB", "database.db"))
-TABLE_NAME = "photos_ok"
-MIN_IMAGE_SIZE = 2500
-MAX_IMAGE_SIZE = 10000
-MAX_WORKERS = min(4, multiprocessing.cpu_count())  # Ограничиваем количество процессов
 
 # Настройка TensorFlow для GPU
 physical_devices = tf.config.list_physical_devices('GPU')

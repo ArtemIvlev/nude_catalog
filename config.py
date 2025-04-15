@@ -1,16 +1,27 @@
+import os
+from dotenv import load_dotenv
+
+# Загружаем переменные окружения
+load_dotenv()
+
 # Пути к файлам и директориям
-PHOTO_DIR = r"/mnt/smb/OneDrive/Pictures/!Фотосессии/"
-DB_FILE = "DB/database.db"
-REVIEW_DIR = "review"
-TELEGRAM_DB = "DB/telegram.db"  # Путь к базе данных Telegram
+PHOTO_DIR = os.getenv('PHOTO_DIR', r"/mnt/smb/OneDrive/Pictures/!Фотосессии/")
+DB_FILE = os.getenv('DB_FILE', os.path.abspath(os.path.join(os.path.dirname(__file__), "DB", "database.db")))
+REVIEW_DIR = os.getenv('REVIEW_DIR', "review")
+TELEGRAM_DB = os.getenv('TELEGRAM_DB', os.path.abspath(os.path.join(os.path.dirname(__file__), "telegram_bot", "published_photos.sqlite")))
+LOG_DIR = os.getenv('LOG_DIR', os.path.abspath(os.path.join(os.path.dirname(__file__), "logs")))
 
 # Параметры базы данных
-TABLE_NAME = "photos_ok"
+TABLE_NAME = os.getenv('TABLE_NAME', "photos_ok")
 
 # Пороговые значения для классификации
-NSFW_THRESHOLD = 0.8
-CLIP_THRESHOLD = 0.8
-MIN_IMAGE_SIZE = 2500  # минимальный размер изображения (ширина или высота)
+NSFW_THRESHOLD = float(os.getenv('NSFW_THRESHOLD', "0.8"))
+CLIP_THRESHOLD = float(os.getenv('CLIP_THRESHOLD', "0.8"))
+MIN_IMAGE_SIZE = int(os.getenv('MIN_IMAGE_SIZE', "2500"))  # минимальный размер изображения (ширина или высота)
+MAX_IMAGE_SIZE = int(os.getenv('MAX_IMAGE_SIZE', "10000"))  # максимальный размер изображения
+
+# Параметры многопоточности
+MAX_WORKERS = min(4, os.cpu_count())  # Ограничиваем количество процессов
 
 # Статусы фотографий
 STATUS_REVIEW = "review"
