@@ -3,7 +3,6 @@ import sys
 import cv2
 import numpy as np
 from PIL import Image
-import sqlite3
 import torch
 import hashlib
 from tqdm import tqdm
@@ -21,19 +20,12 @@ import gc
 from PIL.ExifTags import TAGS
 import time
 import imagehash
-from config import LOG_DIR, PHOTO_DIR, DB_FILE, TABLE_NAME, MIN_IMAGE_SIZE, MAX_IMAGE_SIZE
+from postgres_db import connect_db, ensure_table_schema, insert_or_update_photo, get_photo_by_path
+from config import PHOTO_DIR, TABLE_NAME, MIN_IMAGE_SIZE, MAX_IMAGE_SIZE, MAX_WORKERS, LOG_DIR
 
 logger = logging.getLogger(__name__)
 
 sys.path.append("./")
-
-# === Конфигурация ===
-PHOTO_DIR = r"/mnt/smb/OneDrive/Pictures/!Фотосессии/"
-DB_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "DB", "database.db"))
-TABLE_NAME = "photos_ok"
-MIN_IMAGE_SIZE = 2500
-MAX_IMAGE_SIZE = 10000
-MAX_WORKERS = min(4, multiprocessing.cpu_count())  # Ограничиваем количество процессов
 
 # Настройка TensorFlow для GPU
 physical_devices = tf.config.list_physical_devices('GPU')
@@ -70,15 +62,6 @@ nsfw_detector = MarqoNSFWDetector()
 opennsfw2_detector = OpenNSFW2Detector()
 face_detector = FaceDetector()
 logger.info("✅ Модели инициализированы")
-
-def connect_db():
-    """Подключение к базе данных"""
-    try:
-        conn = sqlite3.connect(DB_FILE)
-        return conn
-    except sqlite3.Error as e:
-        logger.error(f"❌ Ошибка подключения к БД: {e}")
-        return None
 
 def get_image_dates(image_path):
     """
@@ -127,64 +110,6 @@ def get_image_dates(image_path):
         # В случае ошибки возвращаем текущую дату
         current_date = datetime.now().isoformat()
         return current_date, current_date
-
-def ensure_table_schema(conn):
-    """Создание таблицы, если не существует"""
-    cursor = conn.cursor()
-    cursor.execute(f'''
-    CREATE TABLE IF NOT EXISTS {TABLE_NAME} (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        path TEXT UNIQUE,
-        is_nude INTEGER,
-        has_face INTEGER,
-        hash_sha256 TEXT,
-        clip_nude_score REAL,
-        nsfw_score REAL,
-        status TEXT DEFAULT 'new',
-        is_small INTEGER,
-        phash TEXT,
-        views INTEGER,
-        forwards INTEGER,
-        reactions INTEGER,
-        predicted_likes INTEGER,
-        subscribers INTEGER,
-        normalized_views REAL,
-        normalized_forwards REAL,
-        publication_date TEXT,
-        message_id TEXT,
-        shooting_date TEXT,
-        modification_date TEXT
-    )
-    ''')
-    
-    # Проверяем наличие всех необходимых колонок
-    existing_columns = set(
-        row[1] for row in cursor.execute(f"PRAGMA table_info({TABLE_NAME})")
-    )
-    expected_columns = {
-        'clip_nude_score': "REAL",
-        'nsfw_score': "REAL",
-        'status': "TEXT DEFAULT 'new'",
-        'is_small': "INTEGER",
-        'phash': "TEXT",
-        'views': "INTEGER",
-        'forwards': "INTEGER",
-        'reactions': "INTEGER",
-        'predicted_likes': "INTEGER",
-        'subscribers': "INTEGER",
-        'normalized_views': "REAL",
-        'normalized_forwards': "REAL",
-        'publication_date': "TEXT",
-        'message_id': "TEXT",
-        'shooting_date': "TEXT",
-        'modification_date': "TEXT"
-    }
-    
-    for col, coltype in expected_columns.items():
-        if col not in existing_columns:
-            cursor.execute(f"ALTER TABLE {TABLE_NAME} ADD COLUMN {col} {coltype}")
-    
-    conn.commit()
 
 def compute_sha256(filepath):
     """Вычисление SHA256 хеша файла"""
@@ -364,33 +289,6 @@ def process_image(image_path):
         logger.error(f"❌ Ошибка при обработке изображения: {str(e)}")
         return None
 
-def print_result(result):
-    """Вывод результатов анализа в консоль"""
-    if result:
-        print(f"\nРезультаты анализа:")
-        print(f"Путь к изображению: {result['path']}")
-        print(f"Размеры: {result['dimensions']['width']}x{result['dimensions']['height']}")
-        print(f"Количество каналов: {result['dimensions']['channels']}")
-        
-        # NSFW анализ
-        nsfw_analysis = result['details']['nsfw_analysis']
-        print(f"Модель: {nsfw_analysis.get('model', 'Неизвестно')}")
-        print(f"NSFW анализ: {'NSFW' if nsfw_analysis['is_nsfw'] else 'Безопасное'}")
-        print(f"NSFW оценка: {nsfw_analysis['nsfw_score']:.4f}")
-        print(f"Безопасная оценка: {nsfw_analysis['safe_score']:.4f}")
-        print(f"Уверенность: {nsfw_analysis['confidence']:.4f}")
-        print("Детали NSFW:")
-        for class_name, score in nsfw_analysis['details'].items():
-            print(f"  {class_name}: {score:.4f}")
-        
-        # OpenNSFW2 анализ
-        opennsfw2_analysis = result['details']['opennsfw2_analysis']
-        print("OpenNSFW2 анализ:")
-        print(f"  NSFW: {opennsfw2_analysis['nsfw_score']:.4f}")
-        print(f"  Безопасное: {opennsfw2_analysis['safe_score']:.4f}")
-    else:
-        print("Не удалось проанализировать изображение")
-
 def process_directory(directory_path):
     """
     Обрабатывает все изображения в директории последовательно
@@ -447,26 +345,23 @@ def process_directory(directory_path):
                         modification_date = result.get('modification_date', '')
                         phash = result.get('phash', '')
                         
+                        # Подготавливаем данные для вставки
+                        photo_data = {
+                            'path': path,
+                            'is_nude': int(is_nsfw),
+                            'has_face': int(face_count > 0),
+                            'hash_sha256': compute_sha256(path),
+                            'clip_nude_score': clip_nude_score,
+                            'nsfw_score': nsfw_score,
+                            'is_small': is_image_small(path),
+                            'status': 'review',
+                            'phash': phash,
+                            'shooting_date': shooting_date,
+                            'modification_date': modification_date
+                        }
+                        
                         # Сохраняем результат в БД
-                        cursor = conn.cursor()
-                        cursor.execute(f"""
-                            INSERT OR REPLACE INTO {TABLE_NAME} 
-                            (path, is_nude, has_face, hash_sha256, clip_nude_score, nsfw_score, is_small, status, shooting_date, modification_date, phash)
-                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                        """, (
-                            path,
-                            int(is_nsfw),
-                            int(face_count > 0),
-                            compute_sha256(path),
-                            clip_nude_score,
-                            nsfw_score,
-                            is_image_small(path),
-                            'review',
-                            shooting_date,
-                            modification_date,
-                            phash
-                        ))
-                        conn.commit()
+                        insert_or_update_photo(conn, photo_data)
                         processed_count += 1
                         
                 except Exception as e:
@@ -522,4 +417,4 @@ def main():
         tf.keras.backend.clear_session()
 
 if __name__ == "__main__":
-    main()
+    main() 
