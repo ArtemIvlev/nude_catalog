@@ -50,4 +50,4 @@ PG_CONNECTION_PARAMS = {
     'password': POSTGRES_PASSWORD
 } 
 
-MAX_WORKERS = 1 # Ограничиваем количество процессов
+MAX_WORKERS = 1 # Ограничиваем количество процессов 
