@@ -170,8 +170,8 @@ def is_image_small(image_path):
     size = get_image_dimensions(image_path)
     if size:
         width, height = size
-        return 1 if width < MIN_IMAGE_SIZE or height < MIN_IMAGE_SIZE else 0
-    return 0
+        return width < MIN_IMAGE_SIZE or height < MIN_IMAGE_SIZE
+    return False
 
 def analyze_photo(image_path):
     """
@@ -355,8 +355,8 @@ def process_directory(directory_path):
                         # Подготавливаем данные для вставки
                         photo_data = {
                             'path': path,
-                            'is_nude': int(is_nsfw),
-                            'has_face': int(face_count > 0),
+                            'is_nude': bool(is_nsfw),
+                            'has_face': bool(face_count > 0),
                             'hash_sha256': compute_sha256(path),
                             'clip_nude_score': clip_nude_score,
                             'nsfw_score': nsfw_score,
